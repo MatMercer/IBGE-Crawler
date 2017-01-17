@@ -1,0 +1,721 @@
+http://cidades.ibge.gov.br/xtras/uf.php?lang=&coduf=41
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>IBGE | Cidades | Paraná</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="print" href="../css/print.css" type="text/css" />
+	
+	<script type="text/javascript" src="http://www.ibge.gov.br/js/basket.min.full.ibge.js"></script>
+<script language="javascript">
+// basket.clear();
+basket.require(
+{ url: "http://www.ibge.gov.br/js/create-stylesheet.unwrapped-0.2.1.js", expire: 720 }
+,{ url: "http://code.jquery.com/jquery-latest.min.js", expire: 720 }
+,{ url: "../js/redessociais.js", expire: 720 }
+,{ url: "../js/pesqmunuf.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css", expire: 720, execute: false }
+,{ url: "http://www.ibge.gov.br/home/js/inc_GA_portal.js", expire: 720 }
+,{ url: "../css/default.css", expire: 720, execute: false }
+).then(trataCSSbasket, 
+	   function (error) {
+		// There was an error fetching the script
+		console.log(error);
+		basket.clear();
+		}); 
+		function execute()
+		{
+			$(function(){
+				//appenda um ícone com link nos links da página
+			//	$('ul#links_extras li a.ajuda:first').parent().append('<a href="'+$('ul#links_extras li a.ajuda:first').attr('href')+'" title="'+$('ul#links_extras li a.ajuda:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -533px -35px; "></a>');
+				$('ul#links_extras li a.download:first').parent().append('<a target="_blank" href="'+$('ul#links_extras li a.download:first').attr('href')+'" title="'+$('ul#links_extras li a.download:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -367px -35px; "></a>');
+				$('ul#links_extras li a.estadosat:first').parent().append('<a target="_blank" href="'+$('ul#links_extras li a.estadosat:first').attr('href')+'" title="'+$('ul#links_extras li a.estadosat:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -551px -35px; "></a>');
+				$('ul#links_extras li a.cartograma:first').parent().append('<a target="_blank" href="'+$('ul#links_extras li a.cartograma:first').attr('href')+'" title="'+$('ul#links_extras li a.cartograma:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -439px -35px; "></a>');
+			});
+		}
+		
+		defer(execute);
+</script>
+	
+    <style type="text/css">
+		div#conteudo div#conteudo_meio div#mapa {
+			margin: 10px 0 0 0;
+			padding: 0;
+			width: 655px;
+			height: 480px;
+			border: 1px solid #c0c0c0;
+			clear: both;
+		}
+		div#conteudo div#conteudo_meio ul#info_uf {
+			margin: 10px 0 0 0;
+			padding: 0;
+		}
+		div#conteudo div#conteudo_meio ul#info_uf li {
+			background: none;
+			margin: 3px 0 0 0;
+			padding: 0;
+			list-style-position: inside;
+			list-style-type: none;
+			font-weight: bold;
+		}
+		div#conteudo div#conteudo_meio h3#tit_links_extras {
+			margin-top: 30px;
+		}
+		div#conteudo div#conteudo_meio ul#links_extras {
+			width: 655px;
+		}
+	</style>
+</head>
+
+<body>
+    <iframe name="barragov" id="barra_governo" src="http://www.ibge.gov.br/barragov/barragov.htm" frameborder="0" width="100%" height="28" marginheight="0" marginwidth="0" noresize></iframe>
+    <div id="geral">
+        <div id="topo">
+        	<!--<script language="javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+<!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>-->
+<!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="../css/default.css" type="text/css" />-->
+<!--<script type="text/javascript" src="http://www.ibge.gov.br/js/basket.min.full.ibge.js"></script>
+<script language="javascript">
+// basket.clear();
+basket.require(
+{ url: "http://www.ibge.gov.br/js/create-stylesheet.unwrapped-0.2.1.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css", expire: 720, execute: false }
+,{ url: "../css/default.css", expire: 720, execute: false }
+).then(trataCSSbasket, 
+	   function (error) {
+		// There was an error fetching the script
+		console.log(error);
+		basket.clear();
+		}); 
+</script>
+-->
+
+<style type="text/css">
+	/* elementos da busca */
+	div#busca_mun a span span.busca_mun {
+		float: none;
+		width: auto;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+	span.busca_mun input {
+		font-size: 12px;
+		color: #757F8E;
+		width: 175px;
+		background-image: url(../images/images.jpg);
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+	div#busca_mun a span span.busca_mun input {
+		width: 185px
+	}
+
+	ul.ui-autocomplete li a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	div#aniv_menu { display: inline-block; border-left: 1px solid #fff; padding: 0 0 0 7px; color: #fff; height: 25px; line-height: 24px; }
+	div#aniv_menu a { color: #fff; padding: 4px 2px 6px 3px; }
+	div#aniv_menu a:hover { background-color: #c4c4c4; }
+</style>
+
+<script language="javascript">
+	function execute()
+	{
+		$(function(){
+			// prepara as cx de busca
+			$('span.busca_mun input:text').each(function(){
+				$(this)
+				.focus(function(){
+					$(this).val('');
+				})
+				.autocomplete({
+					source: function( request, response ) {
+						$.ajax({
+							url: '../services/jSonpMuns.php?busca='+request.term,
+							data: {
+								featureClass: "P",
+								style: "full",
+								maxRows: 5,
+								name_startsWith: request.term
+							},
+							success: function( data ) {
+								eval("var data = "+data+";");
+								response( $.map( data.municipios, function( item ) {
+									return {
+										label: item.c+' - '+item.n+' - '+item.s,
+										value: item.c+' - '+item.n+' - '+item.s
+									}
+								}));
+							}
+						});
+					},
+					minLength: 2,
+					select: function( event, ui ) {
+						switch ($(this).attr('class').split(" ")[0])
+						{
+							case 'perfil':
+								window.location = '../xtras/perfil.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+							case 'painel':
+								window.location = '../painel/painel.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+							case 'fotos':
+								window.location = '../painel/fotos.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+							case 'historico':
+								window.location = '../painel/historico.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+						}
+					},
+					open: function() {
+						$( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+					},
+					close: function() {
+						$( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+					}
+				});
+			});
+
+		});
+	}
+	defer(execute);
+</script>
+
+<h1 id="logo_ibge" title="Instituto Brasileiro de Geografia e Estat&iacute;stica"><a href="http://www.ibge.gov.br" target="_blank"><span class="off">Instituto Brasileiro de Geografia e Estat&iacute;stica - IBGE</span></a></h1>
+<ul id="idioma">
+	<li class="_EN"><a href="uf.php?coduf=41&lang=_EN" title="Site in English">English</a></li></ul>
+<div id="busca_ibge">
+    <form action="http://www.ibge.gov.br/home/pesquisa/pesquisa_google.shtm" method="get" id="cse-search-box" target="_blank">
+        <input type="hidden" name="cx" value="009791019813784313549:onz63jzsr68">
+        <input type="hidden" name="cof" value="FORID:9">
+        <input type="hidden" name="ie" value="ISO-8859-1">
+        <input name="q" id="mod-busca-google-searchword" maxlength="20" class="inputbox" type="text" size="20" value="procure no IBGE" onblur="if (this.value=='') this.value='procure no IBGE';" onfocus="if (this.value=='procure no IBGE') this.value='';">
+        <input type="submit" name="sa" value="ok" class="button" onclick="this.form.searchword.focus();">
+        <input name="siteurl" type="hidden" value="www.ibge.gov.br/">
+        <input name="ref" type="hidden" value="">
+    </form>
+</div>
+<div id="barra_canal">
+    <h2 id="logo_cidadesat" title="Cidades"><a href="../xtras/home.php?lang="><span class="off">Cidades</span></a></h2>
+    <p id="desc_cidadesat">
+    	O Cidades &eacute; uma ferramenta para se obter informa&ccedil;&otilde;es sobre todos os munic&iacute;pios do Brasil num mesmo lugar. Aqui s&atilde;o encontrados gr&aacute;ficos, tabelas, hist&oacute;ricos e mapas que tra&ccedil;am um perfil completo de cada uma das cidades brasileiras.	</p>
+</div>
+<div id="menu_topo">
+	<a class="link_home" href="../xtras/home.php?lang=" title="P&aacute;gina inicial"><span class="off">P&aacute;gina inicial</span></a>
+    <ul id="menu_ufs">
+        <li id="uf12"><a href="../xtras/uf.php?lang=&coduf=12&search=acre" title="Acre">AC</a></li>
+        <li id="uf27"><a href="../xtras/uf.php?lang=&coduf=27&search=alagoas" title="Alagoas">AL</a></li>
+        <li id="uf13"><a href="../xtras/uf.php?lang=&coduf=13&search=amazonas" title="Amazonas">AM</a></li>
+        <li id="uf16"><a href="../xtras/uf.php?lang=&coduf=16&search=amapa" title="Amap&aacute;">AP</a></li>
+        <li id="uf29"><a href="../xtras/uf.php?lang=&coduf=29&search=bahia" title="Bahia">BA</a></li>
+        <li id="uf23"><a href="../xtras/uf.php?lang=&coduf=23&search=ceara" title="Cear&aacute;">CE</a></li>
+        <li id="uf53"><a href="../xtras/uf.php?lang=&coduf=53&search=distrito-federal" title="Distrito Federal">DF</a></li>
+        <li id="uf32"><a href="../xtras/uf.php?lang=&coduf=32&search=espirito-santo" title="Esp&iacute;rito Santo">ES</a></li>
+        <li id="uf52"><a href="../xtras/uf.php?lang=&coduf=52&search=goias" title="Goi&aacute;s">GO</a></li>
+        <li id="uf21"><a href="../xtras/uf.php?lang=&coduf=21&search=maranhao" title="Maranh&atilde;o">MA</a></li>
+        <li id="uf31"><a href="../xtras/uf.php?lang=&coduf=31&search=minas-gerais" title="Minas Gerais">MG</a></li>
+        <li id="uf50"><a href="../xtras/uf.php?lang=&coduf=50&search=mato-grosso-do-sul" title="Mato Grosso do Sul">MS</a></li>
+        <li id="uf51"><a href="../xtras/uf.php?lang=&coduf=51&search=mato-grosso" title="Mato Grosso">MT</a></li>
+        <li id="uf15"><a href="../xtras/uf.php?lang=&coduf=15&search=para" title="Par&aacute;">PA</a></li>
+        <li id="uf25"><a href="../xtras/uf.php?lang=&coduf=25&search=paraiba" title="Para&iacute;ba">PB</a></li>
+        <li id="uf26"><a href="../xtras/uf.php?lang=&coduf=26&search=pernambuco" title="Pernambuco">PE</a></li>
+        <li id="uf22"><a href="../xtras/uf.php?lang=&coduf=22&search=piaui" title="Piau&iacute;">PI</a></li>
+        <li id="uf41"><a href="../xtras/uf.php?lang=&coduf=41&search=parana" title="Paran&aacute;">PR</a></li>
+        <li id="uf33"><a href="../xtras/uf.php?lang=&coduf=33&search=rio-de-janeiro" title="Rio de Janeiro">RJ</a></li>
+        <li id="uf24"><a href="../xtras/uf.php?lang=&coduf=24&search=rio-grande-do-norte" title="Rio Grande do Norte">RN</a></li>
+        <li id="uf11"><a href="../xtras/uf.php?lang=&coduf=11&search=rondonia" title="Rond&ocirc;nia">RO</a></li>
+        <li id="uf14"><a href="../xtras/uf.php?lang=&coduf=14&search=roraima" title="Roraima">RR</a></li>
+        <li id="uf43"><a href="../xtras/uf.php?lang=&coduf=43&search=rio-grande-do-sul" title="Rio Grande do Sul">RS</a></li>
+        <li id="uf42"><a href="../xtras/uf.php?lang=&coduf=42&search=santa-catarina" title="Santa Catarina">SC</a></li>
+        <li id="uf28"><a href="../xtras/uf.php?lang=&coduf=28&search=sergipe" title="Sergipe">SE</a></li>
+        <li id="uf35"><a href="../xtras/uf.php?lang=&coduf=35&search=sao-paulo" title="S&atilde;o Paulo">SP</a></li>
+        <li id="uf17"><a href="../xtras/uf.php?lang=&coduf=17&search=tocantins" title="Tocantins">TO</a></li>
+    </ul>
+    <div id="busca_mun">
+			<span class="busca_mun" id="busca_mun_perfil"><input class="perfil" id="cxb_perfil" type="text" value="c&oacute;digo ou cidade" size="20" style="padding-left:5px; width:112px;" /></span>
+            <span class="img"></span>
+    </div>
+
+		<div id="aniv_menu"><a href="../painel/aniversario.php">anivers&aacute;rios</a></div>
+
+     <style>
+	#mod_ajuda{
+		float:right;
+		margin:5px 5px 0 0;
+	}
+	#mod_ajuda a:hover{
+		background-color:#c4c4c4;
+	}
+	</style>
+
+
+</div>
+
+<!-- div contendo o link para o Cidades@ V3 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	#link_v3 {
+		margin: 0;
+		padding: 10px;
+		background-color: #005e91;
+		text-align: center;
+	}
+	#link_v3 a {
+		font-size: 15px;
+		text-decoration: none;
+		color: #fff;
+	}
+	#link_v3 a:hover {
+		text-decoration: underline;
+	}
+</style>
+<div id="link_v3">
+		<a href="http://cidades.ibge.gov.br/v3">Clique aqui para acessar o novo Cidades   <i aria-hidden="true" class="fa fa-external-link"></i></a>
+</div>
+        </div>
+        <div id="conteudo">
+            <h2 id="breadcrumb"><span class="first uf">Paraná</span></h2>
+            <div id="menu_lateral">
+                <ul id="lista_municipios">
+                    <li id="m4100103"><a href="perfil.php?lang=&codmun=410010&search=parana|abatia">Abatiá</a></li><li id="m4100202"><a href="perfil.php?lang=&codmun=410020&search=parana|adrianopolis">Adrianópolis</a></li><li id="m4100301"><a href="perfil.php?lang=&codmun=410030&search=parana|agudos-do-sul">Agudos do Sul</a></li><li id="m4100400"><a href="perfil.php?lang=&codmun=410040&search=parana|almirante-tamandare">Almirante Tamandaré</a></li><li id="m4100459"><a href="perfil.php?lang=&codmun=410045&search=parana|altamira-do-parana">Altamira do Paraná</a></li><li id="m4128625"><a href="perfil.php?lang=&codmun=412862&search=parana|alto-paraiso">Alto Paraíso</a></li><li id="m4100608"><a href="perfil.php?lang=&codmun=410060&search=parana|alto-parana">Alto Paraná</a></li><li id="m4100707"><a href="perfil.php?lang=&codmun=410070&search=parana|alto-piquiri">Alto Piquiri</a></li><li id="m4100509"><a href="perfil.php?lang=&codmun=410050&search=parana|altonia">Altônia</a></li><li id="m4100806"><a href="perfil.php?lang=&codmun=410080&search=parana|alvorada-do-sul">Alvorada do Sul</a></li><li id="m4100905"><a href="perfil.php?lang=&codmun=410090&search=parana|amapora">Amaporã</a></li><li id="m4101002"><a href="perfil.php?lang=&codmun=410100&search=parana|ampere">Ampére</a></li><li id="m4101051"><a href="perfil.php?lang=&codmun=410105&search=parana|anahy">Anahy</a></li><li id="m4101101"><a href="perfil.php?lang=&codmun=410110&search=parana|andira">Andirá</a></li><li id="m4101150"><a href="perfil.php?lang=&codmun=410115&search=parana|Ângulo">Ângulo</a></li><li id="m4101200"><a href="perfil.php?lang=&codmun=410120&search=parana|antonina">Antonina</a></li><li id="m4101309"><a href="perfil.php?lang=&codmun=410130&search=parana|antonio-olinto">Antônio Olinto</a></li><li id="m4101408"><a href="perfil.php?lang=&codmun=410140&search=parana|apucarana">Apucarana</a></li><li id="m4101507"><a href="perfil.php?lang=&codmun=410150&search=parana|arapongas">Arapongas</a></li><li id="m4101606"><a href="perfil.php?lang=&codmun=410160&search=parana|arapoti">Arapoti</a></li><li id="m4101655"><a href="perfil.php?lang=&codmun=410165&search=parana|arapua">Arapuã</a></li><li id="m4101705"><a href="perfil.php?lang=&codmun=410170&search=parana|araruna">Araruna</a></li><li id="m4101804"><a href="perfil.php?lang=&codmun=410180&search=parana|araucaria">Araucária</a></li><li id="m4101853"><a href="perfil.php?lang=&codmun=410185&search=parana|ariranha-do-ivai">Ariranha do Ivaí</a></li><li id="m4101903"><a href="perfil.php?lang=&codmun=410190&search=parana|assai">Assaí</a></li><li id="m4102000"><a href="perfil.php?lang=&codmun=410200&search=parana|assis-chateaubriand">Assis Chateaubriand</a></li><li id="m4102109"><a href="perfil.php?lang=&codmun=410210&search=parana|astorga">Astorga</a></li><li id="m4102208"><a href="perfil.php?lang=&codmun=410220&search=parana|atalaia">Atalaia</a></li><li id="m4102307"><a href="perfil.php?lang=&codmun=410230&search=parana|balsa-nova">Balsa Nova</a></li><li id="m4102406"><a href="perfil.php?lang=&codmun=410240&search=parana|bandeirantes">Bandeirantes</a></li><li id="m4102505"><a href="perfil.php?lang=&codmun=410250&search=parana|barbosa-ferraz">Barbosa Ferraz</a></li><li id="m4102703"><a href="perfil.php?lang=&codmun=410270&search=parana|barra-do-jacare">Barra do Jacaré</a></li><li id="m4102604"><a href="perfil.php?lang=&codmun=410260&search=parana|barracao">Barracão</a></li><li id="m4102752"><a href="perfil.php?lang=&codmun=410275&search=parana|bela-vista-da-caroba">Bela Vista da Caroba</a></li><li id="m4102802"><a href="perfil.php?lang=&codmun=410280&search=parana|bela-vista-do-paraiso">Bela Vista do Paraíso</a></li><li id="m4102901"><a href="perfil.php?lang=&codmun=410290&search=parana|bituruna">Bituruna</a></li><li id="m4103008"><a href="perfil.php?lang=&codmun=410300&search=parana|boa-esperanca">Boa Esperança</a></li><li id="m4103024"><a href="perfil.php?lang=&codmun=410302&search=parana|boa-esperanca-do-iguacu">Boa Esperança do Iguaçu</a></li><li id="m4103040"><a href="perfil.php?lang=&codmun=410304&search=parana|boa-ventura-de-sao-roque">Boa Ventura de São Roque</a></li><li id="m4103057"><a href="perfil.php?lang=&codmun=410305&search=parana|boa-vista-da-aparecida">Boa Vista da Aparecida</a></li><li id="m4103107"><a href="perfil.php?lang=&codmun=410310&search=parana|bocaiuva-do-sul">Bocaiúva do Sul</a></li><li id="m4103156"><a href="perfil.php?lang=&codmun=410315&search=parana|bom-jesus-do-sul">Bom Jesus do Sul</a></li><li id="m4103206"><a href="perfil.php?lang=&codmun=410320&search=parana|bom-sucesso">Bom Sucesso</a></li><li id="m4103222"><a href="perfil.php?lang=&codmun=410322&search=parana|bom-sucesso-do-sul">Bom Sucesso do Sul</a></li><li id="m4103305"><a href="perfil.php?lang=&codmun=410330&search=parana|borrazopolis">Borrazópolis</a></li><li id="m4103354"><a href="perfil.php?lang=&codmun=410335&search=parana|braganey">Braganey</a></li><li id="m4103370"><a href="perfil.php?lang=&codmun=410337&search=parana|brasilandia-do-sul">Brasilândia do Sul</a></li><li id="m4103404"><a href="perfil.php?lang=&codmun=410340&search=parana|cafeara">Cafeara</a></li><li id="m4103453"><a href="perfil.php?lang=&codmun=410345&search=parana|cafelandia">Cafelândia</a></li><li id="m4103479"><a href="perfil.php?lang=&codmun=410347&search=parana|cafezal-do-sul">Cafezal do Sul</a></li><li id="m4103503"><a href="perfil.php?lang=&codmun=410350&search=parana|california">Califórnia</a></li><li id="m4103602"><a href="perfil.php?lang=&codmun=410360&search=parana|cambara">Cambará</a></li><li id="m4103701"><a href="perfil.php?lang=&codmun=410370&search=parana|cambe">Cambé</a></li><li id="m4103800"><a href="perfil.php?lang=&codmun=410380&search=parana|cambira">Cambira</a></li><li id="m4103909"><a href="perfil.php?lang=&codmun=410390&search=parana|campina-da-lagoa">Campina da Lagoa</a></li><li id="m4103958"><a href="perfil.php?lang=&codmun=410395&search=parana|campina-do-simao">Campina do Simão</a></li><li id="m4104006"><a href="perfil.php?lang=&codmun=410400&search=parana|campina-grande-do-sul">Campina Grande do Sul</a></li><li id="m4104055"><a href="perfil.php?lang=&codmun=410405&search=parana|campo-bonito">Campo Bonito</a></li><li id="m4104105"><a href="perfil.php?lang=&codmun=410410&search=parana|campo-do-tenente">Campo do Tenente</a></li><li id="m4104204"><a href="perfil.php?lang=&codmun=410420&search=parana|campo-largo">Campo Largo</a></li><li id="m4104253"><a href="perfil.php?lang=&codmun=410425&search=parana|campo-magro">Campo Magro</a></li><li id="m4104303"><a href="perfil.php?lang=&codmun=410430&search=parana|campo-mourao">Campo Mourão</a></li><li id="m4104402"><a href="perfil.php?lang=&codmun=410440&search=parana|candido-de-abreu">Cândido de Abreu</a></li><li id="m4104428"><a href="perfil.php?lang=&codmun=410442&search=parana|candoi">Candói</a></li><li id="m4104451"><a href="perfil.php?lang=&codmun=410445&search=parana|cantagalo">Cantagalo</a></li><li id="m4104501"><a href="perfil.php?lang=&codmun=410450&search=parana|capanema">Capanema</a></li><li id="m4104600"><a href="perfil.php?lang=&codmun=410460&search=parana|capitao-leonidas-marques">Capitão Leônidas Marques</a></li><li id="m4104659"><a href="perfil.php?lang=&codmun=410465&search=parana|carambei">Carambeí</a></li><li id="m4104709"><a href="perfil.php?lang=&codmun=410470&search=parana|carlopolis">Carlópolis</a></li><li id="m4104808"><a href="perfil.php?lang=&codmun=410480&search=parana|cascavel">Cascavel</a></li><li id="m4104907"><a href="perfil.php?lang=&codmun=410490&search=parana|castro">Castro</a></li><li id="m4105003"><a href="perfil.php?lang=&codmun=410500&search=parana|catanduvas">Catanduvas</a></li><li id="m4105102"><a href="perfil.php?lang=&codmun=410510&search=parana|centenario-do-sul">Centenário do Sul</a></li><li id="m4105201"><a href="perfil.php?lang=&codmun=410520&search=parana|cerro-azul">Cerro Azul</a></li><li id="m4105300"><a href="perfil.php?lang=&codmun=410530&search=parana|ceu-azul">Céu Azul</a></li><li id="m4105409"><a href="perfil.php?lang=&codmun=410540&search=parana|chopinzinho">Chopinzinho</a></li><li id="m4105508"><a href="perfil.php?lang=&codmun=410550&search=parana|cianorte">Cianorte</a></li><li id="m4105607"><a href="perfil.php?lang=&codmun=410560&search=parana|cidade-gaucha">Cidade Gaúcha</a></li><li id="m4105706"><a href="perfil.php?lang=&codmun=410570&search=parana|clevelandia">Clevelândia</a></li><li id="m4105805"><a href="perfil.php?lang=&codmun=410580&search=parana|colombo">Colombo</a></li><li id="m4105904"><a href="perfil.php?lang=&codmun=410590&search=parana|colorado">Colorado</a></li><li id="m4106001"><a href="perfil.php?lang=&codmun=410600&search=parana|congonhinhas">Congonhinhas</a></li><li id="m4106100"><a href="perfil.php?lang=&codmun=410610&search=parana|conselheiro-mairinck">Conselheiro Mairinck</a></li><li id="m4106209"><a href="perfil.php?lang=&codmun=410620&search=parana|contenda">Contenda</a></li><li id="m4106308"><a href="perfil.php?lang=&codmun=410630&search=parana|corbelia">Corbélia</a></li><li id="m4106407"><a href="perfil.php?lang=&codmun=410640&search=parana|cornelio-procopio">Cornélio Procópio</a></li><li id="m4106456"><a href="perfil.php?lang=&codmun=410645&search=parana|coronel-domingos-soares">Coronel Domingos Soares</a></li><li id="m4106506"><a href="perfil.php?lang=&codmun=410650&search=parana|coronel-vivida">Coronel Vivida</a></li><li id="m4106555"><a href="perfil.php?lang=&codmun=410655&search=parana|corumbatai-do-sul">Corumbataí do Sul</a></li><li id="m4106803"><a href="perfil.php?lang=&codmun=410680&search=parana|cruz-machado">Cruz Machado</a></li><li id="m4106571"><a href="perfil.php?lang=&codmun=410657&search=parana|cruzeiro-do-iguacu">Cruzeiro do Iguaçu</a></li><li id="m4106605"><a href="perfil.php?lang=&codmun=410660&search=parana|cruzeiro-do-oeste">Cruzeiro do Oeste</a></li><li id="m4106704"><a href="perfil.php?lang=&codmun=410670&search=parana|cruzeiro-do-sul">Cruzeiro do Sul</a></li><li id="m4106852"><a href="perfil.php?lang=&codmun=410685&search=parana|cruzmaltina">Cruzmaltina</a></li><li id="m4106902"><a href="perfil.php?lang=&codmun=410690&search=parana|curitiba">Curitiba</a></li><li id="m4107009"><a href="perfil.php?lang=&codmun=410700&search=parana|curiuva">Curiúva</a></li><li id="m4107108"><a href="perfil.php?lang=&codmun=410710&search=parana|diamante-do-norte">Diamante do Norte</a></li><li id="m4107124"><a href="perfil.php?lang=&codmun=410712&search=parana|diamante-do-sul">Diamante do Sul</a></li><li id="m4107157"><a href="perfil.php?lang=&codmun=410715&search=parana|diamante-d`oeste">Diamante d`Oeste</a></li><li id="m4107207"><a href="perfil.php?lang=&codmun=410720&search=parana|dois-vizinhos">Dois Vizinhos</a></li><li id="m4107256"><a href="perfil.php?lang=&codmun=410725&search=parana|douradina">Douradina</a></li><li id="m4107306"><a href="perfil.php?lang=&codmun=410730&search=parana|doutor-camargo">Doutor Camargo</a></li><li id="m4128633"><a href="perfil.php?lang=&codmun=412863&search=parana|doutor-ulysses">Doutor Ulysses</a></li><li id="m4107405"><a href="perfil.php?lang=&codmun=410740&search=parana|eneas-marques">Enéas Marques</a></li><li id="m4107504"><a href="perfil.php?lang=&codmun=410750&search=parana|engenheiro-beltrao">Engenheiro Beltrão</a></li><li id="m4107538"><a href="perfil.php?lang=&codmun=410753&search=parana|entre-rios-do-oeste">Entre Rios do Oeste</a></li><li id="m4107520"><a href="perfil.php?lang=&codmun=410752&search=parana|esperanca-nova">Esperança Nova</a></li><li id="m4107546"><a href="perfil.php?lang=&codmun=410754&search=parana|espigao-alto-do-iguacu">Espigão Alto do Iguaçu</a></li><li id="m4107553"><a href="perfil.php?lang=&codmun=410755&search=parana|farol">Farol</a></li><li id="m4107603"><a href="perfil.php?lang=&codmun=410760&search=parana|faxinal">Faxinal</a></li><li id="m4107652"><a href="perfil.php?lang=&codmun=410765&search=parana|fazenda-rio-grande">Fazenda Rio Grande</a></li><li id="m4107702"><a href="perfil.php?lang=&codmun=410770&search=parana|fenix">Fênix</a></li><li id="m4107736"><a href="perfil.php?lang=&codmun=410773&search=parana|fernandes-pinheiro">Fernandes Pinheiro</a></li><li id="m4107751"><a href="perfil.php?lang=&codmun=410775&search=parana|figueira">Figueira</a></li><li id="m4107850"><a href="perfil.php?lang=&codmun=410785&search=parana|flor-da-serra-do-sul">Flor da Serra do Sul</a></li><li id="m4107801"><a href="perfil.php?lang=&codmun=410780&search=parana|florai">Floraí</a></li><li id="m4107900"><a href="perfil.php?lang=&codmun=410790&search=parana|floresta">Floresta</a></li><li id="m4108007"><a href="perfil.php?lang=&codmun=410800&search=parana|florestopolis">Florestópolis</a></li><li id="m4108106"><a href="perfil.php?lang=&codmun=410810&search=parana|florida">Flórida</a></li><li id="m4108205"><a href="perfil.php?lang=&codmun=410820&search=parana|formosa-do-oeste">Formosa do Oeste</a></li><li id="m4108304"><a href="perfil.php?lang=&codmun=410830&search=parana|foz-do-iguacu">Foz do Iguaçu</a></li><li id="m4108452"><a href="perfil.php?lang=&codmun=410845&search=parana|foz-do-jordao">Foz do Jordão</a></li><li id="m4108320"><a href="perfil.php?lang=&codmun=410832&search=parana|francisco-alves">Francisco Alves</a></li><li id="m4108403"><a href="perfil.php?lang=&codmun=410840&search=parana|francisco-beltrao">Francisco Beltrão</a></li><li id="m4108502"><a href="perfil.php?lang=&codmun=410850&search=parana|general-carneiro">General Carneiro</a></li><li id="m4108551"><a href="perfil.php?lang=&codmun=410855&search=parana|godoy-moreira">Godoy Moreira</a></li><li id="m4108601"><a href="perfil.php?lang=&codmun=410860&search=parana|goioere">Goioerê</a></li><li id="m4108650"><a href="perfil.php?lang=&codmun=410865&search=parana|goioxim">Goioxim</a></li><li id="m4108700"><a href="perfil.php?lang=&codmun=410870&search=parana|grandes-rios">Grandes Rios</a></li><li id="m4108809"><a href="perfil.php?lang=&codmun=410880&search=parana|guaira">Guaíra</a></li><li id="m4108908"><a href="perfil.php?lang=&codmun=410890&search=parana|guairaca">Guairaçá</a></li><li id="m4108957"><a href="perfil.php?lang=&codmun=410895&search=parana|guamiranga">Guamiranga</a></li><li id="m4109005"><a href="perfil.php?lang=&codmun=410900&search=parana|guapirama">Guapirama</a></li><li id="m4109104"><a href="perfil.php?lang=&codmun=410910&search=parana|guaporema">Guaporema</a></li><li id="m4109203"><a href="perfil.php?lang=&codmun=410920&search=parana|guaraci">Guaraci</a></li><li id="m4109302"><a href="perfil.php?lang=&codmun=410930&search=parana|guaraniacu">Guaraniaçu</a></li><li id="m4109401"><a href="perfil.php?lang=&codmun=410940&search=parana|guarapuava">Guarapuava</a></li><li id="m4109500"><a href="perfil.php?lang=&codmun=410950&search=parana|guaraquecaba">Guaraqueçaba</a></li><li id="m4109609"><a href="perfil.php?lang=&codmun=410960&search=parana|guaratuba">Guaratuba</a></li><li id="m4109658"><a href="perfil.php?lang=&codmun=410965&search=parana|honorio-serpa">Honório Serpa</a></li><li id="m4109708"><a href="perfil.php?lang=&codmun=410970&search=parana|ibaiti">Ibaiti</a></li><li id="m4109757"><a href="perfil.php?lang=&codmun=410975&search=parana|ibema">Ibema</a></li><li id="m4109807"><a href="perfil.php?lang=&codmun=410980&search=parana|ibipora">Ibiporã</a></li><li id="m4109906"><a href="perfil.php?lang=&codmun=410990&search=parana|icaraima">Icaraíma</a></li><li id="m4110003"><a href="perfil.php?lang=&codmun=411000&search=parana|iguaracu">Iguaraçu</a></li><li id="m4110052"><a href="perfil.php?lang=&codmun=411005&search=parana|iguatu">Iguatu</a></li><li id="m4110078"><a href="perfil.php?lang=&codmun=411007&search=parana|imbau">Imbaú</a></li><li id="m4110102"><a href="perfil.php?lang=&codmun=411010&search=parana|imbituva">Imbituva</a></li><li id="m4110201"><a href="perfil.php?lang=&codmun=411020&search=parana|inacio-martins">Inácio Martins</a></li><li id="m4110300"><a href="perfil.php?lang=&codmun=411030&search=parana|inaja">Inajá</a></li><li id="m4110409"><a href="perfil.php?lang=&codmun=411040&search=parana|indianopolis">Indianópolis</a></li><li id="m4110508"><a href="perfil.php?lang=&codmun=411050&search=parana|ipiranga">Ipiranga</a></li><li id="m4110607"><a href="perfil.php?lang=&codmun=411060&search=parana|ipora">Iporã</a></li><li id="m4110656"><a href="perfil.php?lang=&codmun=411065&search=parana|iracema-do-oeste">Iracema do Oeste</a></li><li id="m4110706"><a href="perfil.php?lang=&codmun=411070&search=parana|irati">Irati</a></li><li id="m4110805"><a href="perfil.php?lang=&codmun=411080&search=parana|iretama">Iretama</a></li><li id="m4110904"><a href="perfil.php?lang=&codmun=411090&search=parana|itaguaje">Itaguajé</a></li><li id="m4110953"><a href="perfil.php?lang=&codmun=411095&search=parana|itaipulandia">Itaipulândia</a></li><li id="m4111001"><a href="perfil.php?lang=&codmun=411100&search=parana|itambaraca">Itambaracá</a></li><li id="m4111100"><a href="perfil.php?lang=&codmun=411110&search=parana|itambe">Itambé</a></li><li id="m4111209"><a href="perfil.php?lang=&codmun=411120&search=parana|itapejara-d`oeste">Itapejara d`Oeste</a></li><li id="m4111258"><a href="perfil.php?lang=&codmun=411125&search=parana|itaperucu">Itaperuçu</a></li><li id="m4111308"><a href="perfil.php?lang=&codmun=411130&search=parana|itauna-do-sul">Itaúna do Sul</a></li><li id="m4111407"><a href="perfil.php?lang=&codmun=411140&search=parana|ivai">Ivaí</a></li><li id="m4111506"><a href="perfil.php?lang=&codmun=411150&search=parana|ivaipora">Ivaiporã</a></li><li id="m4111555"><a href="perfil.php?lang=&codmun=411155&search=parana|ivate">Ivaté</a></li><li id="m4111605"><a href="perfil.php?lang=&codmun=411160&search=parana|ivatuba">Ivatuba</a></li><li id="m4111704"><a href="perfil.php?lang=&codmun=411170&search=parana|jaboti">Jaboti</a></li><li id="m4111803"><a href="perfil.php?lang=&codmun=411180&search=parana|jacarezinho">Jacarezinho</a></li><li id="m4111902"><a href="perfil.php?lang=&codmun=411190&search=parana|jaguapita">Jaguapitã</a></li><li id="m4112009"><a href="perfil.php?lang=&codmun=411200&search=parana|jaguariaiva">Jaguariaíva</a></li><li id="m4112108"><a href="perfil.php?lang=&codmun=411210&search=parana|jandaia-do-sul">Jandaia do Sul</a></li><li id="m4112207"><a href="perfil.php?lang=&codmun=411220&search=parana|janiopolis">Janiópolis</a></li><li id="m4112306"><a href="perfil.php?lang=&codmun=411230&search=parana|japira">Japira</a></li><li id="m4112405"><a href="perfil.php?lang=&codmun=411240&search=parana|japura">Japurá</a></li><li id="m4112504"><a href="perfil.php?lang=&codmun=411250&search=parana|jardim-alegre">Jardim Alegre</a></li><li id="m4112603"><a href="perfil.php?lang=&codmun=411260&search=parana|jardim-olinda">Jardim Olinda</a></li><li id="m4112702"><a href="perfil.php?lang=&codmun=411270&search=parana|jataizinho">Jataizinho</a></li><li id="m4112751"><a href="perfil.php?lang=&codmun=411275&search=parana|jesuitas">Jesuítas</a></li><li id="m4112801"><a href="perfil.php?lang=&codmun=411280&search=parana|joaquim-tavora">Joaquim Távora</a></li><li id="m4112900"><a href="perfil.php?lang=&codmun=411290&search=parana|jundiai-do-sul">Jundiaí do Sul</a></li><li id="m4112959"><a href="perfil.php?lang=&codmun=411295&search=parana|juranda">Juranda</a></li><li id="m4113007"><a href="perfil.php?lang=&codmun=411300&search=parana|jussara">Jussara</a></li><li id="m4113106"><a href="perfil.php?lang=&codmun=411310&search=parana|kalore">Kaloré</a></li><li id="m4113205"><a href="perfil.php?lang=&codmun=411320&search=parana|lapa">Lapa</a></li><li id="m4113254"><a href="perfil.php?lang=&codmun=411325&search=parana|laranjal">Laranjal</a></li><li id="m4113304"><a href="perfil.php?lang=&codmun=411330&search=parana|laranjeiras-do-sul">Laranjeiras do Sul</a></li><li id="m4113403"><a href="perfil.php?lang=&codmun=411340&search=parana|leopolis">Leópolis</a></li><li id="m4113429"><a href="perfil.php?lang=&codmun=411342&search=parana|lidianopolis">Lidianópolis</a></li><li id="m4113452"><a href="perfil.php?lang=&codmun=411345&search=parana|lindoeste">Lindoeste</a></li><li id="m4113502"><a href="perfil.php?lang=&codmun=411350&search=parana|loanda">Loanda</a></li><li id="m4113601"><a href="perfil.php?lang=&codmun=411360&search=parana|lobato">Lobato</a></li><li id="m4113700"><a href="perfil.php?lang=&codmun=411370&search=parana|londrina">Londrina</a></li><li id="m4113734"><a href="perfil.php?lang=&codmun=411373&search=parana|luiziana">Luiziana</a></li><li id="m4113759"><a href="perfil.php?lang=&codmun=411375&search=parana|lunardelli">Lunardelli</a></li><li id="m4113809"><a href="perfil.php?lang=&codmun=411380&search=parana|lupionopolis">Lupionópolis</a></li><li id="m4113908"><a href="perfil.php?lang=&codmun=411390&search=parana|mallet">Mallet</a></li><li id="m4114005"><a href="perfil.php?lang=&codmun=411400&search=parana|mambore">Mamborê</a></li><li id="m4114104"><a href="perfil.php?lang=&codmun=411410&search=parana|mandaguacu">Mandaguaçu</a></li><li id="m4114203"><a href="perfil.php?lang=&codmun=411420&search=parana|mandaguari">Mandaguari</a></li><li id="m4114302"><a href="perfil.php?lang=&codmun=411430&search=parana|mandirituba">Mandirituba</a></li><li id="m4114351"><a href="perfil.php?lang=&codmun=411435&search=parana|manfrinopolis">Manfrinópolis</a></li><li id="m4114401"><a href="perfil.php?lang=&codmun=411440&search=parana|mangueirinha">Mangueirinha</a></li><li id="m4114500"><a href="perfil.php?lang=&codmun=411450&search=parana|manoel-ribas">Manoel Ribas</a></li><li id="m4114609"><a href="perfil.php?lang=&codmun=411460&search=parana|marechal-candido-rondon">Marechal Cândido Rondon</a></li><li id="m4114708"><a href="perfil.php?lang=&codmun=411470&search=parana|maria-helena">Maria Helena</a></li><li id="m4114807"><a href="perfil.php?lang=&codmun=411480&search=parana|marialva">Marialva</a></li><li id="m4114906"><a href="perfil.php?lang=&codmun=411490&search=parana|marilandia-do-sul">Marilândia do Sul</a></li><li id="m4115002"><a href="perfil.php?lang=&codmun=411500&search=parana|marilena">Marilena</a></li><li id="m4115101"><a href="perfil.php?lang=&codmun=411510&search=parana|mariluz">Mariluz</a></li><li id="m4115200"><a href="perfil.php?lang=&codmun=411520&search=parana|maringa">Maringá</a></li><li id="m4115309"><a href="perfil.php?lang=&codmun=411530&search=parana|mariopolis">Mariópolis</a></li><li id="m4115358"><a href="perfil.php?lang=&codmun=411535&search=parana|maripa">Maripá</a></li><li id="m4115408"><a href="perfil.php?lang=&codmun=411540&search=parana|marmeleiro">Marmeleiro</a></li><li id="m4115457"><a href="perfil.php?lang=&codmun=411545&search=parana|marquinho">Marquinho</a></li><li id="m4115507"><a href="perfil.php?lang=&codmun=411550&search=parana|marumbi">Marumbi</a></li><li id="m4115606"><a href="perfil.php?lang=&codmun=411560&search=parana|matelandia">Matelândia</a></li><li id="m4115705"><a href="perfil.php?lang=&codmun=411570&search=parana|matinhos">Matinhos</a></li><li id="m4115739"><a href="perfil.php?lang=&codmun=411573&search=parana|mato-rico">Mato Rico</a></li><li id="m4115754"><a href="perfil.php?lang=&codmun=411575&search=parana|maua-da-serra">Mauá da Serra</a></li><li id="m4115804"><a href="perfil.php?lang=&codmun=411580&search=parana|medianeira">Medianeira</a></li><li id="m4115853"><a href="perfil.php?lang=&codmun=411585&search=parana|mercedes">Mercedes</a></li><li id="m4115903"><a href="perfil.php?lang=&codmun=411590&search=parana|mirador">Mirador</a></li><li id="m4116000"><a href="perfil.php?lang=&codmun=411600&search=parana|miraselva">Miraselva</a></li><li id="m4116059"><a href="perfil.php?lang=&codmun=411605&search=parana|missal">Missal</a></li><li id="m4116109"><a href="perfil.php?lang=&codmun=411610&search=parana|moreira-sales">Moreira Sales</a></li><li id="m4116208"><a href="perfil.php?lang=&codmun=411620&search=parana|morretes">Morretes</a></li><li id="m4116307"><a href="perfil.php?lang=&codmun=411630&search=parana|munhoz-de-melo">Munhoz de Melo</a></li><li id="m4116406"><a href="perfil.php?lang=&codmun=411640&search=parana|nossa-senhora-das-gracas">Nossa Senhora das Graças</a></li><li id="m4116505"><a href="perfil.php?lang=&codmun=411650&search=parana|nova-alianca-do-ivai">Nova Aliança do Ivaí</a></li><li id="m4116604"><a href="perfil.php?lang=&codmun=411660&search=parana|nova-america-da-colina">Nova América da Colina</a></li><li id="m4116703"><a href="perfil.php?lang=&codmun=411670&search=parana|nova-aurora">Nova Aurora</a></li><li id="m4116802"><a href="perfil.php?lang=&codmun=411680&search=parana|nova-cantu">Nova Cantu</a></li><li id="m4116901"><a href="perfil.php?lang=&codmun=411690&search=parana|nova-esperanca">Nova Esperança</a></li><li id="m4116950"><a href="perfil.php?lang=&codmun=411695&search=parana|nova-esperanca-do-sudoeste">Nova Esperança do Sudoeste</a></li><li id="m4117008"><a href="perfil.php?lang=&codmun=411700&search=parana|nova-fatima">Nova Fátima</a></li><li id="m4117057"><a href="perfil.php?lang=&codmun=411705&search=parana|nova-laranjeiras">Nova Laranjeiras</a></li><li id="m4117107"><a href="perfil.php?lang=&codmun=411710&search=parana|nova-londrina">Nova Londrina</a></li><li id="m4117206"><a href="perfil.php?lang=&codmun=411720&search=parana|nova-olimpia">Nova Olímpia</a></li><li id="m4117255"><a href="perfil.php?lang=&codmun=411725&search=parana|nova-prata-do-iguacu">Nova Prata do Iguaçu</a></li><li id="m4117214"><a href="perfil.php?lang=&codmun=411721&search=parana|nova-santa-barbara">Nova Santa Bárbara</a></li><li id="m4117222"><a href="perfil.php?lang=&codmun=411722&search=parana|nova-santa-rosa">Nova Santa Rosa</a></li><li id="m4117271"><a href="perfil.php?lang=&codmun=411727&search=parana|nova-tebas">Nova Tebas</a></li><li id="m4117297"><a href="perfil.php?lang=&codmun=411729&search=parana|novo-itacolomi">Novo Itacolomi</a></li><li id="m4117305"><a href="perfil.php?lang=&codmun=411730&search=parana|ortigueira">Ortigueira</a></li><li id="m4117404"><a href="perfil.php?lang=&codmun=411740&search=parana|ourizona">Ourizona</a></li><li id="m4117453"><a href="perfil.php?lang=&codmun=411745&search=parana|ouro-verde-do-oeste">Ouro Verde do Oeste</a></li><li id="m4117503"><a href="perfil.php?lang=&codmun=411750&search=parana|paicandu">Paiçandu</a></li><li id="m4117602"><a href="perfil.php?lang=&codmun=411760&search=parana|palmas">Palmas</a></li><li id="m4117701"><a href="perfil.php?lang=&codmun=411770&search=parana|palmeira">Palmeira</a></li><li id="m4117800"><a href="perfil.php?lang=&codmun=411780&search=parana|palmital">Palmital</a></li><li id="m4117909"><a href="perfil.php?lang=&codmun=411790&search=parana|palotina">Palotina</a></li><li id="m4118006"><a href="perfil.php?lang=&codmun=411800&search=parana|paraiso-do-norte">Paraíso do Norte</a></li><li id="m4118105"><a href="perfil.php?lang=&codmun=411810&search=parana|paranacity">Paranacity</a></li><li id="m4118204"><a href="perfil.php?lang=&codmun=411820&search=parana|paranagua">Paranaguá</a></li><li id="m4118303"><a href="perfil.php?lang=&codmun=411830&search=parana|paranapoema">Paranapoema</a></li><li id="m4118402"><a href="perfil.php?lang=&codmun=411840&search=parana|paranavai">Paranavaí</a></li><li id="m4118451"><a href="perfil.php?lang=&codmun=411845&search=parana|pato-bragado">Pato Bragado</a></li><li id="m4118501"><a href="perfil.php?lang=&codmun=411850&search=parana|pato-branco">Pato Branco</a></li><li id="m4118600"><a href="perfil.php?lang=&codmun=411860&search=parana|paula-freitas">Paula Freitas</a></li><li id="m4118709"><a href="perfil.php?lang=&codmun=411870&search=parana|paulo-frontin">Paulo Frontin</a></li><li id="m4118808"><a href="perfil.php?lang=&codmun=411880&search=parana|peabiru">Peabiru</a></li><li id="m4118857"><a href="perfil.php?lang=&codmun=411885&search=parana|perobal">Perobal</a></li><li id="m4118907"><a href="perfil.php?lang=&codmun=411890&search=parana|perola">Pérola</a></li><li id="m4119004"><a href="perfil.php?lang=&codmun=411900&search=parana|perola-d`oeste">Pérola d`Oeste</a></li><li id="m4119103"><a href="perfil.php?lang=&codmun=411910&search=parana|pien">Piên</a></li><li id="m4119152"><a href="perfil.php?lang=&codmun=411915&search=parana|pinhais">Pinhais</a></li><li id="m4119251"><a href="perfil.php?lang=&codmun=411925&search=parana|pinhal-de-sao-bento">Pinhal de São Bento</a></li><li id="m4119202"><a href="perfil.php?lang=&codmun=411920&search=parana|pinhalao">Pinhalão</a></li><li id="m4119301"><a href="perfil.php?lang=&codmun=411930&search=parana|pinhao">Pinhão</a></li><li id="m4119400"><a href="perfil.php?lang=&codmun=411940&search=parana|pirai-do-sul">Piraí do Sul</a></li><li id="m4119509"><a href="perfil.php?lang=&codmun=411950&search=parana|piraquara">Piraquara</a></li><li id="m4119608"><a href="perfil.php?lang=&codmun=411960&search=parana|pitanga">Pitanga</a></li><li id="m4119657"><a href="perfil.php?lang=&codmun=411965&search=parana|pitangueiras">Pitangueiras</a></li><li id="m4119707"><a href="perfil.php?lang=&codmun=411970&search=parana|planaltina-do-parana">Planaltina do Paraná</a></li><li id="m4119806"><a href="perfil.php?lang=&codmun=411980&search=parana|planalto">Planalto</a></li><li id="m4119905"><a href="perfil.php?lang=&codmun=411990&search=parana|ponta-grossa">Ponta Grossa</a></li><li id="m4119954"><a href="perfil.php?lang=&codmun=411995&search=parana|pontal-do-parana">Pontal do Paraná</a></li><li id="m4120002"><a href="perfil.php?lang=&codmun=412000&search=parana|porecatu">Porecatu</a></li><li id="m4120101"><a href="perfil.php?lang=&codmun=412010&search=parana|porto-amazonas">Porto Amazonas</a></li><li id="m4120150"><a href="perfil.php?lang=&codmun=412015&search=parana|porto-barreiro">Porto Barreiro</a></li><li id="m4120200"><a href="perfil.php?lang=&codmun=412020&search=parana|porto-rico">Porto Rico</a></li><li id="m4120309"><a href="perfil.php?lang=&codmun=412030&search=parana|porto-vitoria">Porto Vitória</a></li><li id="m4120333"><a href="perfil.php?lang=&codmun=412033&search=parana|prado-ferreira">Prado Ferreira</a></li><li id="m4120358"><a href="perfil.php?lang=&codmun=412035&search=parana|pranchita">Pranchita</a></li><li id="m4120408"><a href="perfil.php?lang=&codmun=412040&search=parana|presidente-castelo-branco">Presidente Castelo Branco</a></li><li id="m4120507"><a href="perfil.php?lang=&codmun=412050&search=parana|primeiro-de-maio">Primeiro de Maio</a></li><li id="m4120606"><a href="perfil.php?lang=&codmun=412060&search=parana|prudentopolis">Prudentópolis</a></li><li id="m4120655"><a href="perfil.php?lang=&codmun=412065&search=parana|quarto-centenario">Quarto Centenário</a></li><li id="m4120705"><a href="perfil.php?lang=&codmun=412070&search=parana|quatigua">Quatiguá</a></li><li id="m4120804"><a href="perfil.php?lang=&codmun=412080&search=parana|quatro-barras">Quatro Barras</a></li><li id="m4120853"><a href="perfil.php?lang=&codmun=412085&search=parana|quatro-pontes">Quatro Pontes</a></li><li id="m4120903"><a href="perfil.php?lang=&codmun=412090&search=parana|quedas-do-iguacu">Quedas do Iguaçu</a></li><li id="m4121000"><a href="perfil.php?lang=&codmun=412100&search=parana|querencia-do-norte">Querência do Norte</a></li><li id="m4121109"><a href="perfil.php?lang=&codmun=412110&search=parana|quinta-do-sol">Quinta do Sol</a></li><li id="m4121208"><a href="perfil.php?lang=&codmun=412120&search=parana|quitandinha">Quitandinha</a></li><li id="m4121257"><a href="perfil.php?lang=&codmun=412125&search=parana|ramilandia">Ramilândia</a></li><li id="m4121307"><a href="perfil.php?lang=&codmun=412130&search=parana|rancho-alegre">Rancho Alegre</a></li><li id="m4121356"><a href="perfil.php?lang=&codmun=412135&search=parana|rancho-alegre-d`oeste">Rancho Alegre d`Oeste</a></li><li id="m4121406"><a href="perfil.php?lang=&codmun=412140&search=parana|realeza">Realeza</a></li><li id="m4121505"><a href="perfil.php?lang=&codmun=412150&search=parana|reboucas">Rebouças</a></li><li id="m4121604"><a href="perfil.php?lang=&codmun=412160&search=parana|renascenca">Renascença</a></li><li id="m4121703"><a href="perfil.php?lang=&codmun=412170&search=parana|reserva">Reserva</a></li><li id="m4121752"><a href="perfil.php?lang=&codmun=412175&search=parana|reserva-do-iguacu">Reserva do Iguaçu</a></li><li id="m4121802"><a href="perfil.php?lang=&codmun=412180&search=parana|ribeirao-claro">Ribeirão Claro</a></li><li id="m4121901"><a href="perfil.php?lang=&codmun=412190&search=parana|ribeirao-do-pinhal">Ribeirão do Pinhal</a></li><li id="m4122008"><a href="perfil.php?lang=&codmun=412200&search=parana|rio-azul">Rio Azul</a></li><li id="m4122107"><a href="perfil.php?lang=&codmun=412210&search=parana|rio-bom">Rio Bom</a></li><li id="m4122156"><a href="perfil.php?lang=&codmun=412215&search=parana|rio-bonito-do-iguacu">Rio Bonito do Iguaçu</a></li><li id="m4122172"><a href="perfil.php?lang=&codmun=412217&search=parana|rio-branco-do-ivai">Rio Branco do Ivaí</a></li><li id="m4122206"><a href="perfil.php?lang=&codmun=412220&search=parana|rio-branco-do-sul">Rio Branco do Sul</a></li><li id="m4122305"><a href="perfil.php?lang=&codmun=412230&search=parana|rio-negro">Rio Negro</a></li><li id="m4122404"><a href="perfil.php?lang=&codmun=412240&search=parana|rolandia">Rolândia</a></li><li id="m4122503"><a href="perfil.php?lang=&codmun=412250&search=parana|roncador">Roncador</a></li><li id="m4122602"><a href="perfil.php?lang=&codmun=412260&search=parana|rondon">Rondon</a></li><li id="m4122651"><a href="perfil.php?lang=&codmun=412265&search=parana|rosario-do-ivai">Rosário do Ivaí</a></li><li id="m4122701"><a href="perfil.php?lang=&codmun=412270&search=parana|sabaudia">Sabáudia</a></li><li id="m4122800"><a href="perfil.php?lang=&codmun=412280&search=parana|salgado-filho">Salgado Filho</a></li><li id="m4122909"><a href="perfil.php?lang=&codmun=412290&search=parana|salto-do-itarare">Salto do Itararé</a></li><li id="m4123006"><a href="perfil.php?lang=&codmun=412300&search=parana|salto-do-lontra">Salto do Lontra</a></li><li id="m4123105"><a href="perfil.php?lang=&codmun=412310&search=parana|santa-amelia">Santa Amélia</a></li><li id="m4123204"><a href="perfil.php?lang=&codmun=412320&search=parana|santa-cecilia-do-pavao">Santa Cecília do Pavão</a></li><li id="m4123303"><a href="perfil.php?lang=&codmun=412330&search=parana|santa-cruz-de-monte-castelo">Santa Cruz de Monte Castelo</a></li><li id="m4123402"><a href="perfil.php?lang=&codmun=412340&search=parana|santa-fe">Santa Fé</a></li><li id="m4123501"><a href="perfil.php?lang=&codmun=412350&search=parana|santa-helena">Santa Helena</a></li><li id="m4123600"><a href="perfil.php?lang=&codmun=412360&search=parana|santa-ines">Santa Inês</a></li><li id="m4123709"><a href="perfil.php?lang=&codmun=412370&search=parana|santa-isabel-do-ivai">Santa Isabel do Ivaí</a></li><li id="m4123808"><a href="perfil.php?lang=&codmun=412380&search=parana|santa-izabel-do-oeste">Santa Izabel do Oeste</a></li><li id="m4123824"><a href="perfil.php?lang=&codmun=412382&search=parana|santa-lucia">Santa Lúcia</a></li><li id="m4123857"><a href="perfil.php?lang=&codmun=412385&search=parana|santa-maria-do-oeste">Santa Maria do Oeste</a></li><li id="m4123907"><a href="perfil.php?lang=&codmun=412390&search=parana|santa-mariana">Santa Mariana</a></li><li id="m4123956"><a href="perfil.php?lang=&codmun=412395&search=parana|santa-monica">Santa Mônica</a></li><li id="m4124020"><a href="perfil.php?lang=&codmun=412402&search=parana|santa-tereza-do-oeste">Santa Tereza do Oeste</a></li><li id="m4124053"><a href="perfil.php?lang=&codmun=412405&search=parana|santa-terezinha-de-itaipu">Santa Terezinha de Itaipu</a></li><li id="m4124004"><a href="perfil.php?lang=&codmun=412400&search=parana|santana-do-itarare">Santana do Itararé</a></li><li id="m4124103"><a href="perfil.php?lang=&codmun=412410&search=parana|santo-antonio-da-platina">Santo Antônio da Platina</a></li><li id="m4124202"><a href="perfil.php?lang=&codmun=412420&search=parana|santo-antonio-do-caiua">Santo Antônio do Caiuá</a></li><li id="m4124301"><a href="perfil.php?lang=&codmun=412430&search=parana|santo-antonio-do-paraiso">Santo Antônio do Paraíso</a></li><li id="m4124400"><a href="perfil.php?lang=&codmun=412440&search=parana|santo-antonio-do-sudoeste">Santo Antônio do Sudoeste</a></li><li id="m4124509"><a href="perfil.php?lang=&codmun=412450&search=parana|santo-inacio">Santo Inácio</a></li><li id="m4124608"><a href="perfil.php?lang=&codmun=412460&search=parana|sao-carlos-do-ivai">São Carlos do Ivaí</a></li><li id="m4124707"><a href="perfil.php?lang=&codmun=412470&search=parana|sao-jeronimo-da-serra">São Jerônimo da Serra</a></li><li id="m4124806"><a href="perfil.php?lang=&codmun=412480&search=parana|sao-joao">São João</a></li><li id="m4124905"><a href="perfil.php?lang=&codmun=412490&search=parana|sao-joao-do-caiua">São João do Caiuá</a></li><li id="m4125001"><a href="perfil.php?lang=&codmun=412500&search=parana|sao-joao-do-ivai">São João do Ivaí</a></li><li id="m4125100"><a href="perfil.php?lang=&codmun=412510&search=parana|sao-joao-do-triunfo">São João do Triunfo</a></li><li id="m4125308"><a href="perfil.php?lang=&codmun=412530&search=parana|sao-jorge-do-ivai">São Jorge do Ivaí</a></li><li id="m4125357"><a href="perfil.php?lang=&codmun=412535&search=parana|sao-jorge-do-patrocinio">São Jorge do Patrocínio</a></li><li id="m4125209"><a href="perfil.php?lang=&codmun=412520&search=parana|sao-jorge-d`oeste">São Jorge d`Oeste</a></li><li id="m4125407"><a href="perfil.php?lang=&codmun=412540&search=parana|sao-jose-da-boa-vista">São José da Boa Vista</a></li><li id="m4125456"><a href="perfil.php?lang=&codmun=412545&search=parana|sao-jose-das-palmeiras">São José das Palmeiras</a></li><li id="m4125506"><a href="perfil.php?lang=&codmun=412550&search=parana|sao-jose-dos-pinhais">São José dos Pinhais</a></li><li id="m4125555"><a href="perfil.php?lang=&codmun=412555&search=parana|sao-manoel-do-parana">São Manoel do Paraná</a></li><li id="m4125605"><a href="perfil.php?lang=&codmun=412560&search=parana|sao-mateus-do-sul">São Mateus do Sul</a></li><li id="m4125704"><a href="perfil.php?lang=&codmun=412570&search=parana|sao-miguel-do-iguacu">São Miguel do Iguaçu</a></li><li id="m4125753"><a href="perfil.php?lang=&codmun=412575&search=parana|sao-pedro-do-iguacu">São Pedro do Iguaçu</a></li><li id="m4125803"><a href="perfil.php?lang=&codmun=412580&search=parana|sao-pedro-do-ivai">São Pedro do Ivaí</a></li><li id="m4125902"><a href="perfil.php?lang=&codmun=412590&search=parana|sao-pedro-do-parana">São Pedro do Paraná</a></li><li id="m4126009"><a href="perfil.php?lang=&codmun=412600&search=parana|sao-sebastiao-da-amoreira">São Sebastião da Amoreira</a></li><li id="m4126108"><a href="perfil.php?lang=&codmun=412610&search=parana|sao-tome">São Tomé</a></li><li id="m4126207"><a href="perfil.php?lang=&codmun=412620&search=parana|sapopema">Sapopema</a></li><li id="m4126256"><a href="perfil.php?lang=&codmun=412625&search=parana|sarandi">Sarandi</a></li><li id="m4126272"><a href="perfil.php?lang=&codmun=412627&search=parana|saudade-do-iguacu">Saudade do Iguaçu</a></li><li id="m4126306"><a href="perfil.php?lang=&codmun=412630&search=parana|senges">Sengés</a></li><li id="m4126355"><a href="perfil.php?lang=&codmun=412635&search=parana|serranopolis-do-iguacu">Serranópolis do Iguaçu</a></li><li id="m4126405"><a href="perfil.php?lang=&codmun=412640&search=parana|sertaneja">Sertaneja</a></li><li id="m4126504"><a href="perfil.php?lang=&codmun=412650&search=parana|sertanopolis">Sertanópolis</a></li><li id="m4126603"><a href="perfil.php?lang=&codmun=412660&search=parana|siqueira-campos">Siqueira Campos</a></li><li id="m4126652"><a href="perfil.php?lang=&codmun=412665&search=parana|sulina">Sulina</a></li><li id="m4126678"><a href="perfil.php?lang=&codmun=412667&search=parana|tamarana">Tamarana</a></li><li id="m4126702"><a href="perfil.php?lang=&codmun=412670&search=parana|tamboara">Tamboara</a></li><li id="m4126801"><a href="perfil.php?lang=&codmun=412680&search=parana|tapejara">Tapejara</a></li><li id="m4126900"><a href="perfil.php?lang=&codmun=412690&search=parana|tapira">Tapira</a></li><li id="m4127007"><a href="perfil.php?lang=&codmun=412700&search=parana|teixeira-soares">Teixeira Soares</a></li><li id="m4127106"><a href="perfil.php?lang=&codmun=412710&search=parana|telemaco-borba">Telêmaco Borba</a></li><li id="m4127205"><a href="perfil.php?lang=&codmun=412720&search=parana|terra-boa">Terra Boa</a></li><li id="m4127304"><a href="perfil.php?lang=&codmun=412730&search=parana|terra-rica">Terra Rica</a></li><li id="m4127403"><a href="perfil.php?lang=&codmun=412740&search=parana|terra-roxa">Terra Roxa</a></li><li id="m4127502"><a href="perfil.php?lang=&codmun=412750&search=parana|tibagi">Tibagi</a></li><li id="m4127601"><a href="perfil.php?lang=&codmun=412760&search=parana|tijucas-do-sul">Tijucas do Sul</a></li><li id="m4127700"><a href="perfil.php?lang=&codmun=412770&search=parana|toledo">Toledo</a></li><li id="m4127809"><a href="perfil.php?lang=&codmun=412780&search=parana|tomazina">Tomazina</a></li><li id="m4127858"><a href="perfil.php?lang=&codmun=412785&search=parana|tres-barras-do-parana">Três Barras do Paraná</a></li><li id="m4127882"><a href="perfil.php?lang=&codmun=412788&search=parana|tunas-do-parana">Tunas do Paraná</a></li><li id="m4127908"><a href="perfil.php?lang=&codmun=412790&search=parana|tuneiras-do-oeste">Tuneiras do Oeste</a></li><li id="m4127957"><a href="perfil.php?lang=&codmun=412795&search=parana|tupassi">Tupãssi</a></li><li id="m4127965"><a href="perfil.php?lang=&codmun=412796&search=parana|turvo">Turvo</a></li><li id="m4128005"><a href="perfil.php?lang=&codmun=412800&search=parana|ubirata">Ubiratã</a></li><li id="m4128104"><a href="perfil.php?lang=&codmun=412810&search=parana|umuarama">Umuarama</a></li><li id="m4128203"><a href="perfil.php?lang=&codmun=412820&search=parana|uniao-da-vitoria">União da Vitória</a></li><li id="m4128302"><a href="perfil.php?lang=&codmun=412830&search=parana|uniflor">Uniflor</a></li><li id="m4128401"><a href="perfil.php?lang=&codmun=412840&search=parana|urai">Uraí</a></li><li id="m4128534"><a href="perfil.php?lang=&codmun=412853&search=parana|ventania">Ventania</a></li><li id="m4128559"><a href="perfil.php?lang=&codmun=412855&search=parana|vera-cruz-do-oeste">Vera Cruz do Oeste</a></li><li id="m4128609"><a href="perfil.php?lang=&codmun=412860&search=parana|vere">Verê</a></li><li id="m4128658"><a href="perfil.php?lang=&codmun=412865&search=parana|virmond">Virmond</a></li><li id="m4128708"><a href="perfil.php?lang=&codmun=412870&search=parana|vitorino">Vitorino</a></li><li id="m4128500"><a href="perfil.php?lang=&codmun=412850&search=parana|wenceslau-braz">Wenceslau Braz</a></li><li id="m4128807"><a href="perfil.php?lang=&codmun=412880&search=parana|xambre">Xambrê</a></li>                </ul>
+            </div>
+            <div id="conteudo_meio">
+               
+                <ul id="info_uf">
+                                        <li class="totmun">Número de municipios: 399</li>
+                    <li class="capital"><a href="perfil.php?lang=&codmun=410690&search=parana|curitiba">Capital: Curitiba</a></li>
+                </ul>
+               
+                
+                 <div id="mapa">
+                    <iframe frameborder="0" height="100%" width="100%" marginheight="0" marginwidth="0" id="iframe_mapa" name="iframe_mapa" src="../mapas_ol/cidadesat_mapa_uf.html?codigo=41"></iframe>
+                </div>
+                
+                 <h3 id="tit_links_extras"></h3>
+                <ul id="links_extras">
+          <!--      <li><a class="ajuda" href="help.php?lang=" title="Ajuda">Ajuda</a></li> -->
+                    <li><a class="download" href="../download/mapa_e_municipios.php?lang=&uf=pr" title="Download do mapa e das informações básicas dos municípios" target="_blank">Download do mapa e das informações básicas dos municípios</a></li>
+                    <li><a class="estadosat" href="http://www.ibge.gov.br/estadosat/perfil.php?lang=&sigla=pr" target="_blank" title="Visite o Estados@ para obter informações sobre esta UF">Visite o Estados@ para obter informações sobre esta UF</a></li>
+                    <li><a class="cartograma" href="http://www.ibge.gov.br/webcart" target="_blank" title="Clique aqui para criar cartogramas no WebCart">Clique aqui para criar cartogramas no WebCart</a></li>
+                </ul>
+                
+                
+            </div>
+            <br clear="all" />
+        </div>
+        <div id="rodape">
+			<p>&copy; 2016 IBGE - Instituto Brasileiro de Geografia e Estat&iacute;stica</p>        </div>
+    </div>
+</body>
+</html>
+400
+('410010', 'abatia')
+('410020', 'adrianopolis')
+('410030', 'agudos-do-sul')
+('410040', 'almirante-tamandare')
+('410045', 'altamira-do-parana')
+('412862', 'alto-paraiso')
+('410060', 'alto-parana')
+('410070', 'alto-piquiri')
+('410050', 'altonia')
+('410080', 'alvorada-do-sul')
+('410090', 'amapora')
+('410100', 'ampere')
+('410105', 'anahy')
+('410110', 'andira')
+('410115', 'Ângulo')
+('410120', 'antonina')
+('410130', 'antonio-olinto')
+('410140', 'apucarana')
+('410150', 'arapongas')
+('410160', 'arapoti')
+('410165', 'arapua')
+('410170', 'araruna')
+('410180', 'araucaria')
+('410185', 'ariranha-do-ivai')
+('410190', 'assai')
+('410200', 'assis-chateaubriand')
+('410210', 'astorga')
+('410220', 'atalaia')
+('410230', 'balsa-nova')
+('410240', 'bandeirantes')
+('410250', 'barbosa-ferraz')
+('410270', 'barra-do-jacare')
+('410260', 'barracao')
+('410275', 'bela-vista-da-caroba')
+('410280', 'bela-vista-do-paraiso')
+('410290', 'bituruna')
+('410300', 'boa-esperanca')
+('410302', 'boa-esperanca-do-iguacu')
+('410304', 'boa-ventura-de-sao-roque')
+('410305', 'boa-vista-da-aparecida')
+('410310', 'bocaiuva-do-sul')
+('410315', 'bom-jesus-do-sul')
+('410320', 'bom-sucesso')
+('410322', 'bom-sucesso-do-sul')
+('410330', 'borrazopolis')
+('410335', 'braganey')
+('410337', 'brasilandia-do-sul')
+('410340', 'cafeara')
+('410345', 'cafelandia')
+('410347', 'cafezal-do-sul')
+('410350', 'california')
+('410360', 'cambara')
+('410370', 'cambe')
+('410380', 'cambira')
+('410390', 'campina-da-lagoa')
+('410395', 'campina-do-simao')
+('410400', 'campina-grande-do-sul')
+('410405', 'campo-bonito')
+('410410', 'campo-do-tenente')
+('410420', 'campo-largo')
+('410425', 'campo-magro')
+('410430', 'campo-mourao')
+('410440', 'candido-de-abreu')
+('410442', 'candoi')
+('410445', 'cantagalo')
+('410450', 'capanema')
+('410460', 'capitao-leonidas-marques')
+('410465', 'carambei')
+('410470', 'carlopolis')
+('410480', 'cascavel')
+('410490', 'castro')
+('410500', 'catanduvas')
+('410510', 'centenario-do-sul')
+('410520', 'cerro-azul')
+('410530', 'ceu-azul')
+('410540', 'chopinzinho')
+('410550', 'cianorte')
+('410560', 'cidade-gaucha')
+('410570', 'clevelandia')
+('410580', 'colombo')
+('410590', 'colorado')
+('410600', 'congonhinhas')
+('410610', 'conselheiro-mairinck')
+('410620', 'contenda')
+('410630', 'corbelia')
+('410640', 'cornelio-procopio')
+('410645', 'coronel-domingos-soares')
+('410650', 'coronel-vivida')
+('410655', 'corumbatai-do-sul')
+('410680', 'cruz-machado')
+('410657', 'cruzeiro-do-iguacu')
+('410660', 'cruzeiro-do-oeste')
+('410670', 'cruzeiro-do-sul')
+('410685', 'cruzmaltina')
+('410690', 'curitiba')
+('410700', 'curiuva')
+('410710', 'diamante-do-norte')
+('410712', 'diamante-do-sul')
+('410715', 'diamante-d`oeste')
+('410720', 'dois-vizinhos')
+('410725', 'douradina')
+('410730', 'doutor-camargo')
+('412863', 'doutor-ulysses')
+('410740', 'eneas-marques')
+('410750', 'engenheiro-beltrao')
+('410753', 'entre-rios-do-oeste')
+('410752', 'esperanca-nova')
+('410754', 'espigao-alto-do-iguacu')
+('410755', 'farol')
+('410760', 'faxinal')
+('410765', 'fazenda-rio-grande')
+('410770', 'fenix')
+('410773', 'fernandes-pinheiro')
+('410775', 'figueira')
+('410785', 'flor-da-serra-do-sul')
+('410780', 'florai')
+('410790', 'floresta')
+('410800', 'florestopolis')
+('410810', 'florida')
+('410820', 'formosa-do-oeste')
+('410830', 'foz-do-iguacu')
+('410845', 'foz-do-jordao')
+('410832', 'francisco-alves')
+('410840', 'francisco-beltrao')
+('410850', 'general-carneiro')
+('410855', 'godoy-moreira')
+('410860', 'goioere')
+('410865', 'goioxim')
+('410870', 'grandes-rios')
+('410880', 'guaira')
+('410890', 'guairaca')
+('410895', 'guamiranga')
+('410900', 'guapirama')
+('410910', 'guaporema')
+('410920', 'guaraci')
+('410930', 'guaraniacu')
+('410940', 'guarapuava')
+('410950', 'guaraquecaba')
+('410960', 'guaratuba')
+('410965', 'honorio-serpa')
+('410970', 'ibaiti')
+('410975', 'ibema')
+('410980', 'ibipora')
+('410990', 'icaraima')
+('411000', 'iguaracu')
+('411005', 'iguatu')
+('411007', 'imbau')
+('411010', 'imbituva')
+('411020', 'inacio-martins')
+('411030', 'inaja')
+('411040', 'indianopolis')
+('411050', 'ipiranga')
+('411060', 'ipora')
+('411065', 'iracema-do-oeste')
+('411070', 'irati')
+('411080', 'iretama')
+('411090', 'itaguaje')
+('411095', 'itaipulandia')
+('411100', 'itambaraca')
+('411110', 'itambe')
+('411120', 'itapejara-d`oeste')
+('411125', 'itaperucu')
+('411130', 'itauna-do-sul')
+('411140', 'ivai')
+('411150', 'ivaipora')
+('411155', 'ivate')
+('411160', 'ivatuba')
+('411170', 'jaboti')
+('411180', 'jacarezinho')
+('411190', 'jaguapita')
+('411200', 'jaguariaiva')
+('411210', 'jandaia-do-sul')
+('411220', 'janiopolis')
+('411230', 'japira')
+('411240', 'japura')
+('411250', 'jardim-alegre')
+('411260', 'jardim-olinda')
+('411270', 'jataizinho')
+('411275', 'jesuitas')
+('411280', 'joaquim-tavora')
+('411290', 'jundiai-do-sul')
+('411295', 'juranda')
+('411300', 'jussara')
+('411310', 'kalore')
+('411320', 'lapa')
+('411325', 'laranjal')
+('411330', 'laranjeiras-do-sul')
+('411340', 'leopolis')
+('411342', 'lidianopolis')
+('411345', 'lindoeste')
+('411350', 'loanda')
+('411360', 'lobato')
+('411370', 'londrina')
+('411373', 'luiziana')
+('411375', 'lunardelli')
+('411380', 'lupionopolis')
+('411390', 'mallet')
+('411400', 'mambore')
+('411410', 'mandaguacu')
+('411420', 'mandaguari')
+('411430', 'mandirituba')
+('411435', 'manfrinopolis')
+('411440', 'mangueirinha')
+('411450', 'manoel-ribas')
+('411460', 'marechal-candido-rondon')
+('411470', 'maria-helena')
+('411480', 'marialva')
+('411490', 'marilandia-do-sul')
+('411500', 'marilena')
+('411510', 'mariluz')
+('411520', 'maringa')
+('411530', 'mariopolis')
+('411535', 'maripa')
+('411540', 'marmeleiro')
+('411545', 'marquinho')
+('411550', 'marumbi')
+('411560', 'matelandia')
+('411570', 'matinhos')
+('411573', 'mato-rico')
+('411575', 'maua-da-serra')
+('411580', 'medianeira')
+('411585', 'mercedes')
+('411590', 'mirador')
+('411600', 'miraselva')
+('411605', 'missal')
+('411610', 'moreira-sales')
+('411620', 'morretes')
+('411630', 'munhoz-de-melo')
+('411640', 'nossa-senhora-das-gracas')
+('411650', 'nova-alianca-do-ivai')
+('411660', 'nova-america-da-colina')
+('411670', 'nova-aurora')
+('411680', 'nova-cantu')
+('411690', 'nova-esperanca')
+('411695', 'nova-esperanca-do-sudoeste')
+('411700', 'nova-fatima')
+('411705', 'nova-laranjeiras')
+('411710', 'nova-londrina')
+('411720', 'nova-olimpia')
+('411725', 'nova-prata-do-iguacu')
+('411721', 'nova-santa-barbara')
+('411722', 'nova-santa-rosa')
+('411727', 'nova-tebas')
+('411729', 'novo-itacolomi')
+('411730', 'ortigueira')
+('411740', 'ourizona')
+('411745', 'ouro-verde-do-oeste')
+('411750', 'paicandu')
+('411760', 'palmas')
+('411770', 'palmeira')
+('411780', 'palmital')
+('411790', 'palotina')
+('411800', 'paraiso-do-norte')
+('411810', 'paranacity')
+('411820', 'paranagua')
+('411830', 'paranapoema')
+('411840', 'paranavai')
+('411845', 'pato-bragado')
+('411850', 'pato-branco')
+('411860', 'paula-freitas')
+('411870', 'paulo-frontin')
+('411880', 'peabiru')
+('411885', 'perobal')
+('411890', 'perola')
+('411900', 'perola-d`oeste')
+('411910', 'pien')
+('411915', 'pinhais')
+('411925', 'pinhal-de-sao-bento')
+('411920', 'pinhalao')
+('411930', 'pinhao')
+('411940', 'pirai-do-sul')
+('411950', 'piraquara')
+('411960', 'pitanga')
+('411965', 'pitangueiras')
+('411970', 'planaltina-do-parana')
+('411980', 'planalto')
+('411990', 'ponta-grossa')
+('411995', 'pontal-do-parana')
+('412000', 'porecatu')
+('412010', 'porto-amazonas')
+('412015', 'porto-barreiro')
+('412020', 'porto-rico')
+('412030', 'porto-vitoria')
+('412033', 'prado-ferreira')
+('412035', 'pranchita')
+('412040', 'presidente-castelo-branco')
+('412050', 'primeiro-de-maio')
+('412060', 'prudentopolis')
+('412065', 'quarto-centenario')
+('412070', 'quatigua')
+('412080', 'quatro-barras')
+('412085', 'quatro-pontes')
+('412090', 'quedas-do-iguacu')
+('412100', 'querencia-do-norte')
+('412110', 'quinta-do-sol')
+('412120', 'quitandinha')
+('412125', 'ramilandia')
+('412130', 'rancho-alegre')
+('412135', 'rancho-alegre-d`oeste')
+('412140', 'realeza')
+('412150', 'reboucas')
+('412160', 'renascenca')
+('412170', 'reserva')
+('412175', 'reserva-do-iguacu')
+('412180', 'ribeirao-claro')
+('412190', 'ribeirao-do-pinhal')
+('412200', 'rio-azul')
+('412210', 'rio-bom')
+('412215', 'rio-bonito-do-iguacu')
+('412217', 'rio-branco-do-ivai')
+('412220', 'rio-branco-do-sul')
+('412230', 'rio-negro')
+('412240', 'rolandia')
+('412250', 'roncador')
+('412260', 'rondon')
+('412265', 'rosario-do-ivai')
+('412270', 'sabaudia')
+('412280', 'salgado-filho')
+('412290', 'salto-do-itarare')
+('412300', 'salto-do-lontra')
+('412310', 'santa-amelia')
+('412320', 'santa-cecilia-do-pavao')
+('412330', 'santa-cruz-de-monte-castelo')
+('412340', 'santa-fe')
+('412350', 'santa-helena')
+('412360', 'santa-ines')
+('412370', 'santa-isabel-do-ivai')
+('412380', 'santa-izabel-do-oeste')
+('412382', 'santa-lucia')
+('412385', 'santa-maria-do-oeste')
+('412390', 'santa-mariana')
+('412395', 'santa-monica')
+('412402', 'santa-tereza-do-oeste')
+('412405', 'santa-terezinha-de-itaipu')
+('412400', 'santana-do-itarare')
+('412410', 'santo-antonio-da-platina')
+('412420', 'santo-antonio-do-caiua')
+('412430', 'santo-antonio-do-paraiso')
+('412440', 'santo-antonio-do-sudoeste')
+('412450', 'santo-inacio')
+('412460', 'sao-carlos-do-ivai')
+('412470', 'sao-jeronimo-da-serra')
+('412480', 'sao-joao')
+('412490', 'sao-joao-do-caiua')
+('412500', 'sao-joao-do-ivai')
+('412510', 'sao-joao-do-triunfo')
+('412530', 'sao-jorge-do-ivai')
+('412535', 'sao-jorge-do-patrocinio')
+('412520', 'sao-jorge-d`oeste')
+('412540', 'sao-jose-da-boa-vista')
+('412545', 'sao-jose-das-palmeiras')
+('412550', 'sao-jose-dos-pinhais')
+('412555', 'sao-manoel-do-parana')
+('412560', 'sao-mateus-do-sul')
+('412570', 'sao-miguel-do-iguacu')
+('412575', 'sao-pedro-do-iguacu')
+('412580', 'sao-pedro-do-ivai')
+('412590', 'sao-pedro-do-parana')
+('412600', 'sao-sebastiao-da-amoreira')
+('412610', 'sao-tome')
+('412620', 'sapopema')
+('412625', 'sarandi')
+('412627', 'saudade-do-iguacu')
+('412630', 'senges')
+('412635', 'serranopolis-do-iguacu')
+('412640', 'sertaneja')
+('412650', 'sertanopolis')
+('412660', 'siqueira-campos')
+('412665', 'sulina')
+('412667', 'tamarana')
+('412670', 'tamboara')
+('412680', 'tapejara')
+('412690', 'tapira')
+('412700', 'teixeira-soares')
+('412710', 'telemaco-borba')
+('412720', 'terra-boa')
+('412730', 'terra-rica')
+('412740', 'terra-roxa')
+('412750', 'tibagi')
+('412760', 'tijucas-do-sul')
+('412770', 'toledo')
+('412780', 'tomazina')
+('412785', 'tres-barras-do-parana')
+('412788', 'tunas-do-parana')
+('412790', 'tuneiras-do-oeste')
+('412795', 'tupassi')
+('412796', 'turvo')
+('412800', 'ubirata')
+('412810', 'umuarama')
+('412820', 'uniao-da-vitoria')
+('412830', 'uniflor')
+('412840', 'urai')
+('412853', 'ventania')
+('412855', 'vera-cruz-do-oeste')
+('412860', 'vere')
+('412865', 'virmond')
+('412870', 'vitorino')
+('412850', 'wenceslau-braz')
+('412880', 'xambre')
+('410690', 'curitiba')

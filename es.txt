@@ -1,0 +1,321 @@
+http://cidades.ibge.gov.br/xtras/uf.php?lang=&coduf=32
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>IBGE | Cidades | Espírito Santo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="print" href="../css/print.css" type="text/css" />
+	
+	<script type="text/javascript" src="http://www.ibge.gov.br/js/basket.min.full.ibge.js"></script>
+<script language="javascript">
+// basket.clear();
+basket.require(
+{ url: "http://www.ibge.gov.br/js/create-stylesheet.unwrapped-0.2.1.js", expire: 720 }
+,{ url: "http://code.jquery.com/jquery-latest.min.js", expire: 720 }
+,{ url: "../js/redessociais.js", expire: 720 }
+,{ url: "../js/pesqmunuf.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css", expire: 720, execute: false }
+,{ url: "http://www.ibge.gov.br/home/js/inc_GA_portal.js", expire: 720 }
+,{ url: "../css/default.css", expire: 720, execute: false }
+).then(trataCSSbasket, 
+	   function (error) {
+		// There was an error fetching the script
+		console.log(error);
+		basket.clear();
+		}); 
+		function execute()
+		{
+			$(function(){
+				//appenda um ícone com link nos links da página
+			//	$('ul#links_extras li a.ajuda:first').parent().append('<a href="'+$('ul#links_extras li a.ajuda:first').attr('href')+'" title="'+$('ul#links_extras li a.ajuda:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -533px -35px; "></a>');
+				$('ul#links_extras li a.download:first').parent().append('<a target="_blank" href="'+$('ul#links_extras li a.download:first').attr('href')+'" title="'+$('ul#links_extras li a.download:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -367px -35px; "></a>');
+				$('ul#links_extras li a.estadosat:first').parent().append('<a target="_blank" href="'+$('ul#links_extras li a.estadosat:first').attr('href')+'" title="'+$('ul#links_extras li a.estadosat:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -551px -35px; "></a>');
+				$('ul#links_extras li a.cartograma:first').parent().append('<a target="_blank" href="'+$('ul#links_extras li a.cartograma:first').attr('href')+'" title="'+$('ul#links_extras li a.cartograma:first').attr('title')+'" style="display: block; width: 22px; height: 22px; background-image: url(../images/images.jpg); float: right; background-position: -439px -35px; "></a>');
+			});
+		}
+		
+		defer(execute);
+</script>
+	
+    <style type="text/css">
+		div#conteudo div#conteudo_meio div#mapa {
+			margin: 10px 0 0 0;
+			padding: 0;
+			width: 655px;
+			height: 480px;
+			border: 1px solid #c0c0c0;
+			clear: both;
+		}
+		div#conteudo div#conteudo_meio ul#info_uf {
+			margin: 10px 0 0 0;
+			padding: 0;
+		}
+		div#conteudo div#conteudo_meio ul#info_uf li {
+			background: none;
+			margin: 3px 0 0 0;
+			padding: 0;
+			list-style-position: inside;
+			list-style-type: none;
+			font-weight: bold;
+		}
+		div#conteudo div#conteudo_meio h3#tit_links_extras {
+			margin-top: 30px;
+		}
+		div#conteudo div#conteudo_meio ul#links_extras {
+			width: 655px;
+		}
+	</style>
+</head>
+
+<body>
+    <iframe name="barragov" id="barra_governo" src="http://www.ibge.gov.br/barragov/barragov.htm" frameborder="0" width="100%" height="28" marginheight="0" marginwidth="0" noresize></iframe>
+    <div id="geral">
+        <div id="topo">
+        	<!--<script language="javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+<!--<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>-->
+<!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="../css/default.css" type="text/css" />-->
+<!--<script type="text/javascript" src="http://www.ibge.gov.br/js/basket.min.full.ibge.js"></script>
+<script language="javascript">
+// basket.clear();
+basket.require(
+{ url: "http://www.ibge.gov.br/js/create-stylesheet.unwrapped-0.2.1.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js", expire: 720 }
+,{ url: "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css", expire: 720, execute: false }
+,{ url: "../css/default.css", expire: 720, execute: false }
+).then(trataCSSbasket, 
+	   function (error) {
+		// There was an error fetching the script
+		console.log(error);
+		basket.clear();
+		}); 
+</script>
+-->
+
+<style type="text/css">
+	/* elementos da busca */
+	div#busca_mun a span span.busca_mun {
+		float: none;
+		width: auto;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+	span.busca_mun input {
+		font-size: 12px;
+		color: #757F8E;
+		width: 175px;
+		background-image: url(../images/images.jpg);
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+	div#busca_mun a span span.busca_mun input {
+		width: 185px
+	}
+
+	ul.ui-autocomplete li a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	div#aniv_menu { display: inline-block; border-left: 1px solid #fff; padding: 0 0 0 7px; color: #fff; height: 25px; line-height: 24px; }
+	div#aniv_menu a { color: #fff; padding: 4px 2px 6px 3px; }
+	div#aniv_menu a:hover { background-color: #c4c4c4; }
+</style>
+
+<script language="javascript">
+	function execute()
+	{
+		$(function(){
+			// prepara as cx de busca
+			$('span.busca_mun input:text').each(function(){
+				$(this)
+				.focus(function(){
+					$(this).val('');
+				})
+				.autocomplete({
+					source: function( request, response ) {
+						$.ajax({
+							url: '../services/jSonpMuns.php?busca='+request.term,
+							data: {
+								featureClass: "P",
+								style: "full",
+								maxRows: 5,
+								name_startsWith: request.term
+							},
+							success: function( data ) {
+								eval("var data = "+data+";");
+								response( $.map( data.municipios, function( item ) {
+									return {
+										label: item.c+' - '+item.n+' - '+item.s,
+										value: item.c+' - '+item.n+' - '+item.s
+									}
+								}));
+							}
+						});
+					},
+					minLength: 2,
+					select: function( event, ui ) {
+						switch ($(this).attr('class').split(" ")[0])
+						{
+							case 'perfil':
+								window.location = '../xtras/perfil.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+							case 'painel':
+								window.location = '../painel/painel.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+							case 'fotos':
+								window.location = '../painel/fotos.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+							case 'historico':
+								window.location = '../painel/historico.php?lang=&codmun='+ui.item.label.substr(0,6);
+								break;
+						}
+					},
+					open: function() {
+						$( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+					},
+					close: function() {
+						$( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+					}
+				});
+			});
+
+		});
+	}
+	defer(execute);
+</script>
+
+<h1 id="logo_ibge" title="Instituto Brasileiro de Geografia e Estat&iacute;stica"><a href="http://www.ibge.gov.br" target="_blank"><span class="off">Instituto Brasileiro de Geografia e Estat&iacute;stica - IBGE</span></a></h1>
+<ul id="idioma">
+	<li class="_EN"><a href="uf.php?coduf=32&lang=_EN" title="Site in English">English</a></li></ul>
+<div id="busca_ibge">
+    <form action="http://www.ibge.gov.br/home/pesquisa/pesquisa_google.shtm" method="get" id="cse-search-box" target="_blank">
+        <input type="hidden" name="cx" value="009791019813784313549:onz63jzsr68">
+        <input type="hidden" name="cof" value="FORID:9">
+        <input type="hidden" name="ie" value="ISO-8859-1">
+        <input name="q" id="mod-busca-google-searchword" maxlength="20" class="inputbox" type="text" size="20" value="procure no IBGE" onblur="if (this.value=='') this.value='procure no IBGE';" onfocus="if (this.value=='procure no IBGE') this.value='';">
+        <input type="submit" name="sa" value="ok" class="button" onclick="this.form.searchword.focus();">
+        <input name="siteurl" type="hidden" value="www.ibge.gov.br/">
+        <input name="ref" type="hidden" value="">
+    </form>
+</div>
+<div id="barra_canal">
+    <h2 id="logo_cidadesat" title="Cidades"><a href="../xtras/home.php?lang="><span class="off">Cidades</span></a></h2>
+    <p id="desc_cidadesat">
+    	O Cidades &eacute; uma ferramenta para se obter informa&ccedil;&otilde;es sobre todos os munic&iacute;pios do Brasil num mesmo lugar. Aqui s&atilde;o encontrados gr&aacute;ficos, tabelas, hist&oacute;ricos e mapas que tra&ccedil;am um perfil completo de cada uma das cidades brasileiras.	</p>
+</div>
+<div id="menu_topo">
+	<a class="link_home" href="../xtras/home.php?lang=" title="P&aacute;gina inicial"><span class="off">P&aacute;gina inicial</span></a>
+    <ul id="menu_ufs">
+        <li id="uf12"><a href="../xtras/uf.php?lang=&coduf=12&search=acre" title="Acre">AC</a></li>
+        <li id="uf27"><a href="../xtras/uf.php?lang=&coduf=27&search=alagoas" title="Alagoas">AL</a></li>
+        <li id="uf13"><a href="../xtras/uf.php?lang=&coduf=13&search=amazonas" title="Amazonas">AM</a></li>
+        <li id="uf16"><a href="../xtras/uf.php?lang=&coduf=16&search=amapa" title="Amap&aacute;">AP</a></li>
+        <li id="uf29"><a href="../xtras/uf.php?lang=&coduf=29&search=bahia" title="Bahia">BA</a></li>
+        <li id="uf23"><a href="../xtras/uf.php?lang=&coduf=23&search=ceara" title="Cear&aacute;">CE</a></li>
+        <li id="uf53"><a href="../xtras/uf.php?lang=&coduf=53&search=distrito-federal" title="Distrito Federal">DF</a></li>
+        <li id="uf32"><a href="../xtras/uf.php?lang=&coduf=32&search=espirito-santo" title="Esp&iacute;rito Santo">ES</a></li>
+        <li id="uf52"><a href="../xtras/uf.php?lang=&coduf=52&search=goias" title="Goi&aacute;s">GO</a></li>
+        <li id="uf21"><a href="../xtras/uf.php?lang=&coduf=21&search=maranhao" title="Maranh&atilde;o">MA</a></li>
+        <li id="uf31"><a href="../xtras/uf.php?lang=&coduf=31&search=minas-gerais" title="Minas Gerais">MG</a></li>
+        <li id="uf50"><a href="../xtras/uf.php?lang=&coduf=50&search=mato-grosso-do-sul" title="Mato Grosso do Sul">MS</a></li>
+        <li id="uf51"><a href="../xtras/uf.php?lang=&coduf=51&search=mato-grosso" title="Mato Grosso">MT</a></li>
+        <li id="uf15"><a href="../xtras/uf.php?lang=&coduf=15&search=para" title="Par&aacute;">PA</a></li>
+        <li id="uf25"><a href="../xtras/uf.php?lang=&coduf=25&search=paraiba" title="Para&iacute;ba">PB</a></li>
+        <li id="uf26"><a href="../xtras/uf.php?lang=&coduf=26&search=pernambuco" title="Pernambuco">PE</a></li>
+        <li id="uf22"><a href="../xtras/uf.php?lang=&coduf=22&search=piaui" title="Piau&iacute;">PI</a></li>
+        <li id="uf41"><a href="../xtras/uf.php?lang=&coduf=41&search=parana" title="Paran&aacute;">PR</a></li>
+        <li id="uf33"><a href="../xtras/uf.php?lang=&coduf=33&search=rio-de-janeiro" title="Rio de Janeiro">RJ</a></li>
+        <li id="uf24"><a href="../xtras/uf.php?lang=&coduf=24&search=rio-grande-do-norte" title="Rio Grande do Norte">RN</a></li>
+        <li id="uf11"><a href="../xtras/uf.php?lang=&coduf=11&search=rondonia" title="Rond&ocirc;nia">RO</a></li>
+        <li id="uf14"><a href="../xtras/uf.php?lang=&coduf=14&search=roraima" title="Roraima">RR</a></li>
+        <li id="uf43"><a href="../xtras/uf.php?lang=&coduf=43&search=rio-grande-do-sul" title="Rio Grande do Sul">RS</a></li>
+        <li id="uf42"><a href="../xtras/uf.php?lang=&coduf=42&search=santa-catarina" title="Santa Catarina">SC</a></li>
+        <li id="uf28"><a href="../xtras/uf.php?lang=&coduf=28&search=sergipe" title="Sergipe">SE</a></li>
+        <li id="uf35"><a href="../xtras/uf.php?lang=&coduf=35&search=sao-paulo" title="S&atilde;o Paulo">SP</a></li>
+        <li id="uf17"><a href="../xtras/uf.php?lang=&coduf=17&search=tocantins" title="Tocantins">TO</a></li>
+    </ul>
+    <div id="busca_mun">
+			<span class="busca_mun" id="busca_mun_perfil"><input class="perfil" id="cxb_perfil" type="text" value="c&oacute;digo ou cidade" size="20" style="padding-left:5px; width:112px;" /></span>
+            <span class="img"></span>
+    </div>
+
+		<div id="aniv_menu"><a href="../painel/aniversario.php">anivers&aacute;rios</a></div>
+
+     <style>
+	#mod_ajuda{
+		float:right;
+		margin:5px 5px 0 0;
+	}
+	#mod_ajuda a:hover{
+		background-color:#c4c4c4;
+	}
+	</style>
+
+
+</div>
+
+<!-- div contendo o link para o Cidades@ V3 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	#link_v3 {
+		margin: 0;
+		padding: 10px;
+		background-color: #005e91;
+		text-align: center;
+	}
+	#link_v3 a {
+		font-size: 15px;
+		text-decoration: none;
+		color: #fff;
+	}
+	#link_v3 a:hover {
+		text-decoration: underline;
+	}
+</style>
+<div id="link_v3">
+		<a href="http://cidades.ibge.gov.br/v3">Clique aqui para acessar o novo Cidades   <i aria-hidden="true" class="fa fa-external-link"></i></a>
+</div>
+        </div>
+        <div id="conteudo">
+            <h2 id="breadcrumb"><span class="first uf">Espírito Santo</span></h2>
+            <div id="menu_lateral">
+                <ul id="lista_municipios">
+                    <li id="m3200102"><a href="perfil.php?lang=&codmun=320010&search=espirito-santo|afonso-claudio">Afonso Cláudio</a></li><li id="m3200169"><a href="perfil.php?lang=&codmun=320016&search=espirito-santo|Água-doce-do-norte">Água Doce do Norte</a></li><li id="m3200136"><a href="perfil.php?lang=&codmun=320013&search=espirito-santo|Águia-branca">Águia Branca</a></li><li id="m3200201"><a href="perfil.php?lang=&codmun=320020&search=espirito-santo|alegre">Alegre</a></li><li id="m3200300"><a href="perfil.php?lang=&codmun=320030&search=espirito-santo|alfredo-chaves">Alfredo Chaves</a></li><li id="m3200359"><a href="perfil.php?lang=&codmun=320035&search=espirito-santo|alto-rio-novo">Alto Rio Novo</a></li><li id="m3200409"><a href="perfil.php?lang=&codmun=320040&search=espirito-santo|anchieta">Anchieta</a></li><li id="m3200508"><a href="perfil.php?lang=&codmun=320050&search=espirito-santo|apiaca">Apiacá</a></li><li id="m3200607"><a href="perfil.php?lang=&codmun=320060&search=espirito-santo|aracruz">Aracruz</a></li><li id="m3200706"><a href="perfil.php?lang=&codmun=320070&search=espirito-santo|atilio-vivacqua">Atilio Vivacqua</a></li><li id="m3200805"><a href="perfil.php?lang=&codmun=320080&search=espirito-santo|baixo-guandu">Baixo Guandu</a></li><li id="m3200904"><a href="perfil.php?lang=&codmun=320090&search=espirito-santo|barra-de-sao-francisco">Barra de São Francisco</a></li><li id="m3201001"><a href="perfil.php?lang=&codmun=320100&search=espirito-santo|boa-esperanca">Boa Esperança</a></li><li id="m3201100"><a href="perfil.php?lang=&codmun=320110&search=espirito-santo|bom-jesus-do-norte">Bom Jesus do Norte</a></li><li id="m3201159"><a href="perfil.php?lang=&codmun=320115&search=espirito-santo|brejetuba">Brejetuba</a></li><li id="m3201209"><a href="perfil.php?lang=&codmun=320120&search=espirito-santo|cachoeiro-de-itapemirim">Cachoeiro de Itapemirim</a></li><li id="m3201308"><a href="perfil.php?lang=&codmun=320130&search=espirito-santo|cariacica">Cariacica</a></li><li id="m3201407"><a href="perfil.php?lang=&codmun=320140&search=espirito-santo|castelo">Castelo</a></li><li id="m3201506"><a href="perfil.php?lang=&codmun=320150&search=espirito-santo|colatina">Colatina</a></li><li id="m3201605"><a href="perfil.php?lang=&codmun=320160&search=espirito-santo|conceicao-da-barra">Conceição da Barra</a></li><li id="m3201704"><a href="perfil.php?lang=&codmun=320170&search=espirito-santo|conceicao-do-castelo">Conceição do Castelo</a></li><li id="m3201803"><a href="perfil.php?lang=&codmun=320180&search=espirito-santo|divino-de-sao-lourenco">Divino de São Lourenço</a></li><li id="m3201902"><a href="perfil.php?lang=&codmun=320190&search=espirito-santo|domingos-martins">Domingos Martins</a></li><li id="m3202009"><a href="perfil.php?lang=&codmun=320200&search=espirito-santo|dores-do-rio-preto">Dores do Rio Preto</a></li><li id="m3202108"><a href="perfil.php?lang=&codmun=320210&search=espirito-santo|ecoporanga">Ecoporanga</a></li><li id="m3202207"><a href="perfil.php?lang=&codmun=320220&search=espirito-santo|fundao">Fundão</a></li><li id="m3202256"><a href="perfil.php?lang=&codmun=320225&search=espirito-santo|governador-lindenberg">Governador Lindenberg</a></li><li id="m3202306"><a href="perfil.php?lang=&codmun=320230&search=espirito-santo|guacui">Guaçuí</a></li><li id="m3202405"><a href="perfil.php?lang=&codmun=320240&search=espirito-santo|guarapari">Guarapari</a></li><li id="m3202454"><a href="perfil.php?lang=&codmun=320245&search=espirito-santo|ibatiba">Ibatiba</a></li><li id="m3202504"><a href="perfil.php?lang=&codmun=320250&search=espirito-santo|ibiracu">Ibiraçu</a></li><li id="m3202553"><a href="perfil.php?lang=&codmun=320255&search=espirito-santo|ibitirama">Ibitirama</a></li><li id="m3202603"><a href="perfil.php?lang=&codmun=320260&search=espirito-santo|iconha">Iconha</a></li><li id="m3202652"><a href="perfil.php?lang=&codmun=320265&search=espirito-santo|irupi">Irupi</a></li><li id="m3202702"><a href="perfil.php?lang=&codmun=320270&search=espirito-santo|itaguacu">Itaguaçu</a></li><li id="m3202801"><a href="perfil.php?lang=&codmun=320280&search=espirito-santo|itapemirim">Itapemirim</a></li><li id="m3202900"><a href="perfil.php?lang=&codmun=320290&search=espirito-santo|itarana">Itarana</a></li><li id="m3203007"><a href="perfil.php?lang=&codmun=320300&search=espirito-santo|iuna">Iúna</a></li><li id="m3203056"><a href="perfil.php?lang=&codmun=320305&search=espirito-santo|jaguare">Jaguaré</a></li><li id="m3203106"><a href="perfil.php?lang=&codmun=320310&search=espirito-santo|jeronimo-monteiro">Jerônimo Monteiro</a></li><li id="m3203130"><a href="perfil.php?lang=&codmun=320313&search=espirito-santo|joao-neiva">João Neiva</a></li><li id="m3203163"><a href="perfil.php?lang=&codmun=320316&search=espirito-santo|laranja-da-terra">Laranja da Terra</a></li><li id="m3203205"><a href="perfil.php?lang=&codmun=320320&search=espirito-santo|linhares">Linhares</a></li><li id="m3203304"><a href="perfil.php?lang=&codmun=320330&search=espirito-santo|mantenopolis">Mantenópolis</a></li><li id="m3203320"><a href="perfil.php?lang=&codmun=320332&search=espirito-santo|marataizes">Marataízes</a></li><li id="m3203346"><a href="perfil.php?lang=&codmun=320334&search=espirito-santo|marechal-floriano">Marechal Floriano</a></li><li id="m3203353"><a href="perfil.php?lang=&codmun=320335&search=espirito-santo|marilandia">Marilândia</a></li><li id="m3203403"><a href="perfil.php?lang=&codmun=320340&search=espirito-santo|mimoso-do-sul">Mimoso do Sul</a></li><li id="m3203502"><a href="perfil.php?lang=&codmun=320350&search=espirito-santo|montanha">Montanha</a></li><li id="m3203601"><a href="perfil.php?lang=&codmun=320360&search=espirito-santo|mucurici">Mucurici</a></li><li id="m3203700"><a href="perfil.php?lang=&codmun=320370&search=espirito-santo|muniz-freire">Muniz Freire</a></li><li id="m3203809"><a href="perfil.php?lang=&codmun=320380&search=espirito-santo|muqui">Muqui</a></li><li id="m3203908"><a href="perfil.php?lang=&codmun=320390&search=espirito-santo|nova-venecia">Nova Venécia</a></li><li id="m3204005"><a href="perfil.php?lang=&codmun=320400&search=espirito-santo|pancas">Pancas</a></li><li id="m3204054"><a href="perfil.php?lang=&codmun=320405&search=espirito-santo|pedro-canario">Pedro Canário</a></li><li id="m3204104"><a href="perfil.php?lang=&codmun=320410&search=espirito-santo|pinheiros">Pinheiros</a></li><li id="m3204203"><a href="perfil.php?lang=&codmun=320420&search=espirito-santo|piuma">Piúma</a></li><li id="m3204252"><a href="perfil.php?lang=&codmun=320425&search=espirito-santo|ponto-belo">Ponto Belo</a></li><li id="m3204302"><a href="perfil.php?lang=&codmun=320430&search=espirito-santo|presidente-kennedy">Presidente Kennedy</a></li><li id="m3204351"><a href="perfil.php?lang=&codmun=320435&search=espirito-santo|rio-bananal">Rio Bananal</a></li><li id="m3204401"><a href="perfil.php?lang=&codmun=320440&search=espirito-santo|rio-novo-do-sul">Rio Novo do Sul</a></li><li id="m3204500"><a href="perfil.php?lang=&codmun=320450&search=espirito-santo|santa-leopoldina">Santa Leopoldina</a></li><li id="m3204559"><a href="perfil.php?lang=&codmun=320455&search=espirito-santo|santa-maria-de-jetiba">Santa Maria de Jetibá</a></li><li id="m3204609"><a href="perfil.php?lang=&codmun=320460&search=espirito-santo|santa-teresa">Santa Teresa</a></li><li id="m3204658"><a href="perfil.php?lang=&codmun=320465&search=espirito-santo|sao-domingos-do-norte">São Domingos do Norte</a></li><li id="m3204708"><a href="perfil.php?lang=&codmun=320470&search=espirito-santo|sao-gabriel-da-palha">São Gabriel da Palha</a></li><li id="m3204807"><a href="perfil.php?lang=&codmun=320480&search=espirito-santo|sao-jose-do-calcado">São José do Calçado</a></li><li id="m3204906"><a href="perfil.php?lang=&codmun=320490&search=espirito-santo|sao-mateus">São Mateus</a></li><li id="m3204955"><a href="perfil.php?lang=&codmun=320495&search=espirito-santo|sao-roque-do-canaa">São Roque do Canaã</a></li><li id="m3205002"><a href="perfil.php?lang=&codmun=320500&search=espirito-santo|serra">Serra</a></li><li id="m3205010"><a href="perfil.php?lang=&codmun=320501&search=espirito-santo|sooretama">Sooretama</a></li><li id="m3205036"><a href="perfil.php?lang=&codmun=320503&search=espirito-santo|vargem-alta">Vargem Alta</a></li><li id="m3205069"><a href="perfil.php?lang=&codmun=320506&search=espirito-santo|venda-nova-do-imigrante">Venda Nova do Imigrante</a></li><li id="m3205101"><a href="perfil.php?lang=&codmun=320510&search=espirito-santo|viana">Viana</a></li><li id="m3205150"><a href="perfil.php?lang=&codmun=320515&search=espirito-santo|vila-pavao">Vila Pavão</a></li><li id="m3205176"><a href="perfil.php?lang=&codmun=320517&search=espirito-santo|vila-valerio">Vila Valério</a></li><li id="m3205200"><a href="perfil.php?lang=&codmun=320520&search=espirito-santo|vila-velha">Vila Velha</a></li><li id="m3205309"><a href="perfil.php?lang=&codmun=320530&search=espirito-santo|vitoria">Vitória</a></li>                </ul>
+            </div>
+            <div id="conteudo_meio">
+               
+                <ul id="info_uf">
+                                        <li class="totmun">Número de municipios: 78</li>
+                    <li class="capital"><a href="perfil.php?lang=&codmun=320530&search=espirito-santo|vitoria">Capital: Vitória</a></li>
+                </ul>
+               
+                
+                 <div id="mapa">
+                    <iframe frameborder="0" height="100%" width="100%" marginheight="0" marginwidth="0" id="iframe_mapa" name="iframe_mapa" src="../mapas_ol/cidadesat_mapa_uf.html?codigo=32"></iframe>
+                </div>
+                
+                 <h3 id="tit_links_extras"></h3>
+                <ul id="links_extras">
+          <!--      <li><a class="ajuda" href="help.php?lang=" title="Ajuda">Ajuda</a></li> -->
+                    <li><a class="download" href="../download/mapa_e_municipios.php?lang=&uf=es" title="Download do mapa e das informações básicas dos municípios" target="_blank">Download do mapa e das informações básicas dos municípios</a></li>
+                    <li><a class="estadosat" href="http://www.ibge.gov.br/estadosat/perfil.php?lang=&sigla=es" target="_blank" title="Visite o Estados@ para obter informações sobre esta UF">Visite o Estados@ para obter informações sobre esta UF</a></li>
+                    <li><a class="cartograma" href="http://www.ibge.gov.br/webcart" target="_blank" title="Clique aqui para criar cartogramas no WebCart">Clique aqui para criar cartogramas no WebCart</a></li>
+                </ul>
+                
+                
+            </div>
+            <br clear="all" />
+        </div>
+        <div id="rodape">
+			<p>&copy; 2016 IBGE - Instituto Brasileiro de Geografia e Estat&iacute;stica</p>        </div>
+    </div>
+</body>
+</html>
+0

@@ -1,4 +1,4 @@
-from csv import writer, reader
+from csv import writer
 
 from ibge_crawler.common import ibge_logger
 from ibge_crawler.mun_gen import MunGenerator

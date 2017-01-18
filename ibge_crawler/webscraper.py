@@ -1,8 +1,11 @@
 import re
+
 from bs4 import BeautifulSoup
 
+from ibge_crawler.dicto_closured import DictClosured
 
-class WebScraper:
+
+class WebScraper(DictClosured):
     def __init__(self, html: str, clean_html: bool=True):
         if clean_html:
             html = self._clean_html(html)

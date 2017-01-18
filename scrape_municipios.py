@@ -13,6 +13,7 @@ convert_table = {
     ord("Ó"): "O"
 }
 
+
 def clean_mun_name(name: str):
     # Convert utf-8 chars to ascii corretly
     name = name.translate(convert_table)
@@ -20,6 +21,7 @@ def clean_mun_name(name: str):
 
     buf = name.encode("ascii", "replace")
     return buf.decode("ascii").upper()
+
 
 def scrape_muns():
     ibge_logger.debug("Opening links.csv...")
@@ -38,9 +40,8 @@ def scrape_muns():
                 print("Exiting... Please backup municipios.csv.")
                 exit(1)
 
-
         with open("municipios.csv", "w") as mun_csv:
-            mun_writer = writer(mun_csv)
+            mun_writer = writer(mun_csv, delimiter=";")
 
             for row in link_reader:
                 # Clean the mun name

@@ -5,7 +5,7 @@ state = IBGEStates.SP
 
 mun_gen = MunGenerator()
 
-muns = mun_gen.extract_mun_code(state)
+muns = mun_gen.extract_mun_codes(state)
 
 for mun in muns:
     print(mun)

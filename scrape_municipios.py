@@ -32,8 +32,8 @@ def scrape_muns():
                 info_scr = MunInfoScraper(info_html)
                 info = info_scr.as_dict()
 
-                print(brief)
-                print(info)
+                ibge_logger.debug("Got %s for brief info." % str(brief))
+                ibge_logger.debug("Got %s for detailed info." % str(info))
 
             ibge_logger.info("Scraped %d municipios to municipios.csv." % mun_total)
 

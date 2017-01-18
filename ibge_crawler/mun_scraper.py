@@ -21,3 +21,8 @@ class MunScraper(WebScraper):
         data = self._data_by_alike_text("População estimada").replace(".", "")
 
         return int(data)
+
+    def cod_mun(self):
+        data = self._data_by_alike_text("Código do Mun")
+
+        return int(data)

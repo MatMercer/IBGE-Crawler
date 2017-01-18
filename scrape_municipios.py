@@ -10,12 +10,17 @@ def scrape_muns():
     with open("links.csv", "r") as link_csv:
         link_reader = reader(link_csv)
         ibge_logger.debug("Opening municipios.csv...")
+
+        # Get the total
+        muns_total = len(open("links.csv", "r").readlines())
+        ibge_logger.info("Going to scrape %d municipios." % muns_total)
+        scraped_muns = 0
+
         with open("municipios.csv", "w") as mun_csv:
             mun_writer = writer(mun_csv)
 
-            mun_total = 0
             for row in link_reader:
-                mun_total += 1
+                ibge_logger.info("%.4f%% complete. %d/%d" % (scraped_muns/muns_total, scraped_muns, muns_total))
                 ibge_logger.info("Scraping %s ~ %s..." % (row[0], row[1]))
 
                 # Get the brief html
@@ -35,7 +40,13 @@ def scrape_muns():
                 ibge_logger.debug("Got %s for brief info." % str(brief))
                 ibge_logger.debug("Got %s for detailed info." % str(info))
 
-            ibge_logger.info("Scraped %d municipios to municipios.csv." % mun_total)
+                # Write the data to the csv file
+                mun_writer.writerow([row[0], row[1], brief["cod_mun"], brief["pop_estimada"], info["pib"]])
+
+                # Count the scraped mun
+                scraped_muns += 1
+
+            ibge_logger.info("Scraped %d municipios to municipios.csv." % muns_total)
 
 
 if __name__ == "__main__":

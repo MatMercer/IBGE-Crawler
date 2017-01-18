@@ -14,5 +14,7 @@ class MunInfoScraper(WebScraper):
 
         return data_el.text
 
-    def __init__(self, html: str):
-        super().__init__(html)
+    def pib(self):
+        data = self._data_by_alike_text("PIB per capita")
+
+        return self._float_data(data)

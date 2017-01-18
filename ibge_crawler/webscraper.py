@@ -25,3 +25,9 @@ class WebScraper(DictClosured):
         # Remove empty elements
         html = re.sub(r"<(\w+)></\1>", "", html)
         return html
+
+    @staticmethod
+    def _float_data(data: str):
+        data = data.replace(".", "").replace(",", ".")
+
+        return float(data)

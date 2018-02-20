@@ -1,7 +1,7 @@
 # IBGE-Crawler
 Um crawler simples do IBGE implementado em Python 3. Criado 
 em Janeiro de 2017. Como todos os Crawlers estendem a Classe
-DictoClosured, é muito fácil de adicionar novos campos para, por 
+DictoClosured, é muito fácil de adicionar novos campos para minerar, por 
 exemplo, atualmente somente esses dados são minerados:
 
 **MunScraper**
